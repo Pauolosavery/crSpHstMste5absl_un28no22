@@ -1,0 +1,10 @@
+.skill {
+  background-color: #16171b;
+  color: #acacac;
+}
+.list {
+  display: flex;
+}
+.single {
+  background-color: #1c1d21;
+}
