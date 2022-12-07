@@ -1,4 +1,7 @@
 import style from "./Home.module.css";
 export default function Home() {
-  return <div className={style.home}>Home</div>;
+  return <div className={style.home}>
+    <div> LOGO</div>
+    
+  </div>;
 }
