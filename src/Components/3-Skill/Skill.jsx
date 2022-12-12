@@ -47,7 +47,7 @@ export default function Skill() {
             <span className={style.title}>React</span>
             <span className={style.line} />
           </h3>
-          <p>Class, Hook</p>
+          <p>Class, Hook, API, Solid, KISS</p>
         </div>
         <div className={style.single}>
           <span className={style.circle} />
