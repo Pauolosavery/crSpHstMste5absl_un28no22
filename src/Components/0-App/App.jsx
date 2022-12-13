@@ -1,8 +1,7 @@
 // import { useDispatch, useSelector } from "react-redux";
-
 // import { useEffect } from 'react';
 // import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import NavBar from "../1-NavBar/NavBar.jsx";
+import NavBar from "../1-NavBar/NavBar.jsx";
 import Home from "../2-Home/Home.jsx";
 import Skill from "../3-Skill/Skill.jsx";
 import Portfolio from "../4-Portfolio/Portfolio.jsx";
@@ -20,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <NavBar /> */}
+      <NavBar />
       <Home />
       <Skill />
       <Portfolio />

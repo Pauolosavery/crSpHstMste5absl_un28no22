@@ -1,3 +1,8 @@
 export default function About() {
-  return <div className="About">About</div>;
+  return (
+    <div className="About">
+      <a name="About" />
+      About
+    </div>
+  );
 }

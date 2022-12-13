@@ -2,6 +2,7 @@ import style from "./Skill.module.css";
 export default function Skill() {
   return (
     <div className={style.skill}>
+      <a name="Skill" />
       <h2>stack</h2>
       <div className={style.list}>
         <div className={style.single}>

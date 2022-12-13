@@ -2,6 +2,7 @@ import style from "./Portfolio.module.css";
 export default function Portfolio() {
   return (
     <div className={style.portfolio}>
+      <a name="Portfolio" />
       <h3>Мои приложения</h3>
       <ol type="I">
         <li>Пиццерия (онлайн заказ еды)</li>
