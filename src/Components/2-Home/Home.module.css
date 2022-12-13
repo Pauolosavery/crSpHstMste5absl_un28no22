@@ -1,5 +1,4 @@
 .home {
-  position: relative;
   background-color: #16171b;
   background-image: url("../../../img/bgd/hero-bg-img1.jpg");
   background-repeat: no-repeat;
@@ -7,4 +6,15 @@
   background-size: cover;
   height: 100vh;
   color: #acacac;
+  position: relative;
 }
+
+.logo {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../../img/icons/PS.svg');
+  }

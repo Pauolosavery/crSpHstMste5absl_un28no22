@@ -8,7 +8,6 @@ export default function NavBar() {
   };
   return (
     <header>
-      <h3>LOGO</h3>
       <nav ref={navRef}>
         <a href="#">Home</a>
         <a href="#Skill">Мои навыки</a>
