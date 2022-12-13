@@ -1,5 +1,10 @@
 .home {
+  position: relative;
   background-color: #16171b;
+  background-image: url("../../../img/bgd/hero-bg-img1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   color: #acacac;
 }
