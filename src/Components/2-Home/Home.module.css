@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
+
 .home {
   background-color: #16171b;
   background-image: url("../../../img/bgd/hero-bg-img1.jpg");
@@ -5,10 +7,10 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
-  color: #acacac;
+  color: #fff;
   position: relative;
-  z-index: -1;
-}
+  z-index: 0;
+} 
 
 .logo {
   position: absolute;
@@ -21,17 +23,48 @@
 }
 
 .greeting {
+  font-weight: 700;
+  font-size: 40px;
   z-index: 2;
   position: absolute;
   top: 30vh;
-  left: 50vh;
+  left: 20vh;
+  transition: all 1.2s ease 0.4s;
 }
 
 .greeting_1 {
+  font-weight: 500;
+  font-size: 25px;
   z-index: 2;
   position: absolute;
-  top: 40vh;
-  left: 50vh;
+  top: 45vh;
+  left: 20vh;
+}
+
+.sendOffer{
+  display: flex;
+  font-weight: 500;
+  font-size: 25px;
+  z-index: 2;
+  position: absolute;
+  top: 60vh;
+  left: 20vh;
+}
+
+.offerIco{
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:#f43534;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../img/icons/arrow-right-white.png");
+}
+
+.offerIco:hover{
+  transform: scale(120%);
+  transition: all 0.2s;
 }
 
 .js_bk {
@@ -42,6 +75,7 @@
   top: 1vh;
   left: 20vh;
   color: #0000000f;
+  user-select: none;
   transform: rotate(270deg);
 }
 
@@ -52,18 +86,21 @@
   left: 45vw;
   position: absolute;
   height: 100vh;
-  width: 200px;
+  width: 313px;
 }
 
 .more {
   position: absolute;
   transform: rotate(270deg);
   left: 5px;
-  bottom: 20vh;
+  bottom: 10vh;
 }
 
 .social {
+  height: 50px;
+  width: 10px;
+  z-index: 2;
   position: absolute;
-  right: 10vw;
+  right: 170px;
   bottom: 10vh;
 }
