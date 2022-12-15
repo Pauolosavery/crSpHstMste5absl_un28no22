@@ -7,6 +7,7 @@
   height: 100vh;
   color: #acacac;
   position: relative;
+  z-index: -1;
 }
 
 .logo {
@@ -16,5 +17,53 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('../../img/icons/PS.svg');
-  }
+  background-image: url("../../img/icons/PS.svg");
+}
+
+.greeting {
+  z-index: 2;
+  position: absolute;
+  top: 30vh;
+  left: 50vh;
+}
+
+.greeting_1 {
+  z-index: 2;
+  position: absolute;
+  top: 40vh;
+  left: 50vh;
+}
+
+.js_bk {
+  font-weight: 900;
+  font-size: 80vh;
+  z-index: 1;
+  position: absolute;
+  top: 1vh;
+  left: 20vh;
+  color: #0000000f;
+  transform: rotate(270deg);
+}
+
+.photo {
+  z-index: 1;
+  background-color: #16171b;
+  top: 0;
+  left: 45vw;
+  position: absolute;
+  height: 100vh;
+  width: 200px;
+}
+
+.more {
+  position: absolute;
+  transform: rotate(270deg);
+  left: 5px;
+  bottom: 20vh;
+}
+
+.social {
+  position: absolute;
+  right: 10vw;
+  bottom: 10vh;
+}

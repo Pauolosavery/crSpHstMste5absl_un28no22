@@ -5,12 +5,21 @@ export default function Home() {
       <div className={style.logo}>
         <img src="../../img/icons/PS.svg" alt="" />
       </div>
-      <div name="top"> Привет! Я Павел.</div>
-      <div> Fullstack JavaScript developer</div>
-      <div> Мой стек</div>
-      <div> ПОДРОБНЕЕ</div>
-      <div> МОЁ ФОТО</div>
-      <div> СОЦ СЕТИ</div>
+      <div className={style.greeting} name="top">
+        <h2>Привет! Это Павел</h2>
+      </div>
+      <div>
+        <h3 className={style.greeting_1}>Fullstack JavaScript developer</h3>
+      </div>
+      <div className={style.js_bk}>JS</div>
+      <div className={style.more}>← ОБО МНЕ</div>
+      <div className={style.photo}> МОЁ ФОТО</div>
+      <div className={style.social}>
+        <div className={style.cv}>CV</div>
+        <div className={style.mail}>MAIL</div>
+        <div className={style.telegram}>Telegram</div>
+        <div className={style.hh}>hh</div>
+      </div>
     </div>
   );
 }
