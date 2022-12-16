@@ -5,8 +5,8 @@ header {
   justify-content: space-between;
   height: 30px;
   padding: 0 2rem;
-  /* background-color: var(--mainColor); */
-  color: var(--textColor);
+  background-color: #111;
+  color: #aaa;
   position: fixed;
 }
 
@@ -17,7 +17,11 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--secondaryColor);
+  color: #f43534;
+  color: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+  background-size: 200%;
+  /* transition: .5s ease-out; */
+  transition: all 0.5s ease;
 }
 
 header .navBtn {
@@ -26,7 +30,7 @@ header .navBtn {
   background: transparent;
   border: none;
   outline: none;
-  /* color: var(--textColor); */
+  color: #fff;
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
@@ -54,7 +58,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    /* background-color: var(--mainColor); */
+    background-color: #111;
     transition: 1s;
     transform: translateY(-100vh);
   }

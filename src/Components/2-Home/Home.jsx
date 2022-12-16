@@ -12,28 +12,31 @@ export default function Home() {
         <h4 className={style.greeting_1}>Fullstack JavaScript developer</h4>
       </div>
       <div>
-        <h4 className={style.sendOffer}>отправить оффер
-        <div className={style.offerIco}/>
+        <h4 className={style.sendOffer}>
+          отправить оффер
+          <div className={style.offerIco} />
         </h4>
       </div>
       <div className={style.js_bk}>JS</div>
-      <div className={style.more}>← ОБО МНЕ</div>
+      <div className={style.more}>
+        <a href="#About">← ОБО МНЕ</a>
+      </div>
       <div className={style.photo}> МОЁ ФОТО</div>
       <div className={style.social}>
         <ul>
-          {/* <ol> */}
-            {/* <div className={style.cv}> */}
-              <a href="https://pauolosavery.ru">_____CV</a>
-            {/* </div> */}
-          {/* </ol> */}
           <ol>
-        <div className={style.mail}>MAIL</div>
-        </ol>
-        <ol>
-        <div className={style.telegram}>Telegram</div>
-        </ol>
-        <ol>
-        <div className={style.hh}>hh</div>
+            <div className={style.cv}>
+              <a href="https://pauolosavery.ru">_____CV</a>
+            </div>
+          </ol>
+          <ol>
+            <div className={style.mail}>MAIL</div>
+          </ol>
+          <ol>
+            <div className={style.telegram}>Telegram</div>
+          </ol>
+          <ol>
+            <div className={style.hh}>hh</div>
           </ol>
         </ul>
       </div>
