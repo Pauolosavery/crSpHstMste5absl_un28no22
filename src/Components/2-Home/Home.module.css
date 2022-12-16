@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap");
 
 .home {
   background-color: #16171b;
@@ -10,7 +10,7 @@
   color: #fff;
   position: relative;
   z-index: 0;
-} 
+}
 
 .logo {
   position: absolute;
@@ -24,7 +24,7 @@
 
 .greeting {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 10vh;
   z-index: 2;
   position: absolute;
   top: 30vh;
@@ -34,14 +34,14 @@
 
 .greeting_1 {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 7vh;
   z-index: 2;
   position: absolute;
   top: 45vh;
   left: 20vh;
 }
 
-.sendOffer{
+.sendOffer {
   display: flex;
   font-weight: 500;
   font-size: 25px;
@@ -51,18 +51,18 @@
   left: 20vh;
 }
 
-.offerIco{
+.offerIco {
   margin-left: 20px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color:#f43534;
+  background-color: #f43534;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../img/icons/arrow-right-white.png");
 }
 
-.offerIco:hover{
+.offerIco:hover {
   transform: scale(120%);
   transition: all 0.2s;
 }
