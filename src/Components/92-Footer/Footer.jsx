@@ -2,7 +2,7 @@ import style from "./Footer.module.css";
 export default function Footer() {
   return (
     <div className={style.footer}>
-      <div>Pauolosavery OG </div>
+      <div>Pauolosavery</div>
       <div>2022</div>
       <div>
         Вдохновлён{" "}

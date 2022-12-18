@@ -1,15 +1,30 @@
 import style from "./Home.module.css";
 export default function Home() {
+
+  function download (filename, text) {
+		fetch('./CV_Fullstack_Pavel.Plekhanov.txt')
+			.then(response => {
+				response.blob().then(blob => {
+					let url = window.URL.createObjectURL(blob);
+					let a = document.createElement('a');
+					a.href = url;
+					a.download = 'CV_Fullstack_Pavel.Plekhanov.txt';
+					a.click();
+				});
+				//window.location.href = response.url;
+		});
+  }
+
   return (
     <div className={style.home}>
       <div className={style.logo}>
         <img src="../../img/icons/PS.svg" alt="" />
       </div>
       <div className={style.greeting} name="top">
-        <h2>Привет! Это Павел</h2>
+        <h2>Привет! <p>Это Павел</p></h2>
+        <h4 >Fullstack JavaScript developer</h4>
       </div>
       <div>
-        <h4 className={style.greeting_1}>Fullstack JavaScript developer</h4>
       </div>
       <div>
         <h4 className={style.sendOffer}>
@@ -21,13 +36,18 @@ export default function Home() {
       <div className={style.more}>
         <a href="#About">← ОБО МНЕ</a>
       </div>
-      <div className={style.photo}> МОЁ ФОТО</div>
+      <div className={style.photo}/>
       <div className={style.social}>
         <ul>
           <ol>
-            <div className={style.cv}>
-              <a href="https://pauolosavery.ru">_____CV</a>
-            </div>
+            <a className={style.cv}
+            href='/files/CV_Fullstack_Pavel.Plekhanov.txt'
+            // target="_blank"
+            download
+            // onClick={()=>download("CV_Fullstack_Pavel.Plekhanov.pdf")}
+            >
+              CV
+              </a>
           </ol>
           <ol>
             <div className={style.mail}>MAIL</div>
