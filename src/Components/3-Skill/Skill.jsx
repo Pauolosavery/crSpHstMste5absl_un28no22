@@ -1,7 +1,7 @@
 import style from "./Skill.module.css";
 export default function Skill() {
   return (
-    <div className={style.skill}>
+    <section className={style.skill}>
       <a name="Skill" />
       <h2>stack</h2>
       <div className={style.list}>
@@ -96,6 +96,6 @@ export default function Skill() {
           <p>VScode, npm</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
