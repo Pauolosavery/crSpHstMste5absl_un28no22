@@ -1,14 +1,40 @@
 .skill {
   background-color: #16171b;
   color: #acacac;
-}
-.list {
-  //display: flex;
-}
-.single {
-  background-color: #1c1d21;
+  font-size: 90px;
 }
 
 .section__title {
   transform: translateX(-83px);
+  transform: translate(0);
+  position: relative;
+  text-align: center;
+  top: 0;
+  text-transform: lowercase;
+  margin-bottom: 50px;
+  text-shadow: -1px -1px 0 #26272d, 1px -1px 0 #26272d, -1px 1px 0 #26272d,
+    1px 1px 0 #26272d;
+  color: #16171b;
+}
+
+.skill .skill__wrapper {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+  z-index: 2;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill__wrapper .vertical__line {
+  display: block;
+  height: calc(100% + 80px);
+  width: 2px;
+  background: #f43534;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  top: -40px;
 }
