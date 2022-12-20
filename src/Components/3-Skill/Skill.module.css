@@ -8,3 +8,7 @@
 .single {
   background-color: #1c1d21;
 }
+
+.section__title {
+  transform: translateX(-83px);
+}
