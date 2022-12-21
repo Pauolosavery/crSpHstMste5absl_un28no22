@@ -12,10 +12,14 @@
   z-index: 0;
 }
 
+a {
+  transition: all 0.3s ease;
+}
+
 .logo {
-  position: absolute;
-  height: 30px;
-  width: 30px;
+  text-decoration: none;
+  color: #333;
+  background-color: transparent;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -24,7 +28,7 @@
 
 .greeting {
   font-weight: 700;
-  font-size: 5vh;    
+  font-size: 5vh;
   line-height: 0;
   z-index: 2;
   position: absolute;
