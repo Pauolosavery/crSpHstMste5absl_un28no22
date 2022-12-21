@@ -3,9 +3,6 @@ export default function Home() {
   return (
     <section className={style.home}>
       <a name="Home" />
-      <a className={style.logo}>
-        <img src="../../img/icons/PS.svg" alt="logo" />
-      </a>
       <div className={style.greeting} name="top">
         <h2>
           Привет! <p>Это Павел</p>

@@ -1,0 +1,69 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #16171b;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  padding: 0px auto;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 84px;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 5;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../img/icons/PS.svg");
+}
+
+.header__menu {
+}
+
+.menu__list > li {
+  position: relative;
+  margin: 0px 0px 0px 20px;
+}
+
+.menu__link {
+  color: #fff;
+  font-size: 18px;
+}
+.menu__link:hover,
+.menu__sub__link:hover {
+  color: #f43534;
+}
+.menu__sub__list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #16171b;
+  padding: 15px;
+  min-width: 200px;
+}
+
+.menu__sub__list li {
+  margin: 0px 0px 10px 0px;
+}
+
+@media (min-width: 767px) {
+  .menu__list {
+    display: flex;
+    align-items: center;
+  }
+  .menu__list > li {
+    padding: 10px 0;
+  }
+}

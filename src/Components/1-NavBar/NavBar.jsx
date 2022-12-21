@@ -5,8 +5,8 @@ export default function NavBar() {
   return (
     <header className={style.header}>
       <div className={style.header__container}>
-        <a href="#Home" className={style.logo} />
-        <div className={style.menu}>
+        <a href="#Home" className={style.header__logo}></a>
+        <div className={style.header__menu}>
           <div className={style.menu__icon}>
             <span></span>
           </div>
