@@ -6,8 +6,8 @@ const skills = [
         'title': 'Figma',
         'text':'Photoshop, Illustrator',
         }, {
-        'title': 'JS',
-        'text':'TyprScript, ECMAScript 2022, CodeWars - 6 kyu',
+        'title': 'Js',
+        'text':'TypeScript, ECMAScript 2022, CodeWars - 6 kyu',
         }, {
         'title': 'Nodejs',
         'text':'Linux, Windows, Express, bcrypt, sessions, webSocket',
@@ -24,11 +24,17 @@ const skills = [
         'title': 'Sequelize',
         'text':'Beekeeper, many-to-many, database',
         }, {
-        'title': 'SOFT',
+        'title': 'Soft',
         'text':'VSCode, npm, Docker',
         }, {
         'title': 'Test',
         'text':'JEST, Postman',
+        },{
+        'title': 'SCRUM',
+        'text':'Git, Zoom, Slack, Jira',
+        },{
+        'title': 'DRY, KISS, SOLID',
+        'text':'Don\`t repeat yourself & keep it simple and straightforward',
         }
 ]
 export default skills

@@ -1,9 +1,19 @@
+import {useRef} from 'react'
 import style from "./ScrollTop.module.css";
 
 export default function ScrollTop() {
+    const scrollEl = useRef(null);
+    window.onscroll = () => {
+    const hasScrolling = !(window.scrollX === 0 && window.scrollY === 0);
+        if(window.scrollY < 200) {
+    scrollEl.current.style.display = 'none'
+} else {
+    scrollEl.current.style.display = 'block'
+}
+}
   return (
     <a href="#Home" >
-        <div className={style.scroll__top}>
+        <div className={style.scroll__top} ref={scrollEl}>
         <svg
             aria-hidden="true"
             focusable="false"
