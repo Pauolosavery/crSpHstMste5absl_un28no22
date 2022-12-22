@@ -1,20 +1,23 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import style from "./ScrollTop.module.css";
 
 export default function ScrollTop() {
   const scrollEl = useRef(null);
-  const scroll__top = "scroll__top_on";
+  const [top, setTop] = useState(false);
   window.onscroll = () => {
     const hasScrolling = !(window.scrollX === 0 && window.scrollY === 0);
     if (window.scrollY < 200) {
-      scrollEl.current.style.display = "none";
+      setTop(true);
     } else {
-      scrollEl.current.style.display = "block";
+      setTop(false);
     }
   };
   return (
     <a href="#Home">
-      <div className={style.scroll__top} ref={scrollEl}>
+      <div
+        className={top ? `${style.off}` : `${style.scroll__top}`}
+        ref={scrollEl}
+      >
         <svg
           aria-hidden="true"
           focusable="false"
