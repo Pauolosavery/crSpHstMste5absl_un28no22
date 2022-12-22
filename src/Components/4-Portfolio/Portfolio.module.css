@@ -1,3 +1,18 @@
 .portfolio {
-  background-color: rgb(54, 54, 54);
+    background-color: #16171b;
+  color: #acacac;
+  font-size: 90px;
+}
+
+.section__title {
+  transform: translateX(-83px);
+  transform: translate(0);
+  position: relative;
+  text-align: center;
+  top: 0;
+  text-transform: lowercase;
+  margin-bottom: 50px;
+  text-shadow: -1px -1px 0 #26272d, 1px -1px 0 #26272d, -1px 1px 0 #26272d,
+    1px 1px 0 #26272d;
+  color: #16171b;
 }
