@@ -1,26 +1,33 @@
 .scroll__top {
-    display: block;
-    background: #f43534;
-    border-radius: 3px;
-    bottom: 50px;
-    cursor: pointer;
-    height: 40px;
-    position: fixed;
-    right: 30px;
-    text-align: center;
-    width: 40px;
-    z-index: 9;
-    font-size: 20px;
-    line-height: 1.8;
-}
-.scroll__top svg {
-    width: 12px;
-    color: #fff;
-    position: relative;
-    top: 3px;
+  display: block;
+  background: #f43534;
+  border-radius: 3px;
+  bottom: 50px;
+  cursor: pointer;
+  height: 40px;
+  position: fixed;
+  right: 30px;
+  text-align: center;
+  width: 40px;
+  z-index: 9;
+  font-size: 20px;
+  line-height: 1.8;
+  transition: all 0.2s;
 }
 
-@media (max-width: 1199px)
-.scroll__top {
-    bottom: 90px;
+.off {
+  display: none;
+  transition: display 0.2s;
+  color: red;
 }
+
+.scroll__top svg {
+  width: 12px;
+  color: #fff;
+  position: relative;
+  top: 3px;
+}
+
+/* @media (max-width: 1199px) .scroll__top {
+  bottom: 90px;
+} */
