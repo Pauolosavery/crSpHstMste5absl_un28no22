@@ -3,7 +3,7 @@ export default function Portfolio() {
   return (
     <section className={style.portfolio}>
       <a name="Portfolio" />
-      <h3>Мои приложения</h3>
+      <h2 className={style.section__title}>Мои проекты</h2>
       <ol type="I">
         <li>Пиццерия (онлайн заказ еды)</li>
         <p>Fullstack</p>
@@ -11,13 +11,13 @@ export default function Portfolio() {
           nodejs, PostgreSQL, React, redux, react-redux, thunk, MUI,
           cloudpayments
         </p>
-        <li>Чат компании</li>
+        <li>Приватные деловые кабины (SPA)</li>
         <p>Fullstack vanilla</p>
         <p>nodejs, PostgreSQL, JS, HTML, Bootstrap</p>
-        <li>Чат компании</li>
+        <li>StarWars API</li>
         <p>Fullstack vanilla</p>
         <p>nodejs, PostgreSQL, JS, HTML, Bootstrap</p>
-        <li>API</li>
+        <li>Pokemon API</li>
         <p>POKEMON</p>
         <p>StarWars</p>
       </ol>

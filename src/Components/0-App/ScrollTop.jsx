@@ -1,11 +1,14 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import style from "./ScrollTop.module.css";
 
 export default function ScrollTop() {
   const scrollEl = useRef(null);
   const [top, setTop] = useState(false);
+  useEffect(()=>{
+    window.scrollY < 200 ? setTop(true) : setTop(false);
+  },[])
   window.onscroll = () => {
-    const hasScrolling = !(window.scrollX === 0 && window.scrollY === 0);
+    // const hasScrolling = !(window.scrollX === 0 && window.scrollY === 0);
     if (window.scrollY < 200) {
       setTop(true);
     } else {
