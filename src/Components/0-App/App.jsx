@@ -9,18 +9,14 @@ import ScrollTop from "./ScrollTop.jsx";
 import style from "./App.module.css";
 function App() {
   return (
-    <div className="App">
+    <div className={style.app}>
       <NavBar />
       <ScrollTop />
       <Home />
       <Skill />
       <Portfolio />
       <About />
-      <span className={`${style.verticalLine} ${style.line1}`} />
-      <span className={`${style.verticalLine} ${style.line2}`} />
-      <span className={`${style.verticalLine} ${style.line3}`} />
-      <span className={`${style.verticalLine} ${style.line4}`} />
-      <span className={`${style.verticalLine} ${style.line5}`} />
+
       {/* <Services /> */}
       {/* <Education /> */}
       {/* <Achievements /> */}
