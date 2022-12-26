@@ -2,45 +2,48 @@ import style from "./Home.module.css";
 export default function Home() {
   return (
     <>
+      <a name="Home" />
       <span className={`${style.vertical__line} ${style.line1}`} />
       <span className={`${style.vertical__line} ${style.line2}`} />
       <span className={`${style.vertical__line} ${style.line3}`} />
       <span className={`${style.vertical__line} ${style.line4}`} />
       <span className={`${style.vertical__line} ${style.line5}`} />
-      <section
-        className={`${style.hero__section} +' '+ ${style.pos__relative}`}
-      >
+      <section className={`${style.hero__section} ${style.pos__relative}`}>
         <div className={style.overlay}></div>
 
         <span className={style.vertical__logo}>
-          <img src="../../img/icons/PS.svg" alt="vertical__logo" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="ps__logo_bgd"
+            viewBox="0 0 36.311 48.744"
+          />
         </span>
         <div className={style.hero__image__wrapper}>
           <span
-            className={`${style.hero__image} +' '+ ${style.animate__me} +' '+ ${style.animated}`}
+            className={`${style.hero__image} ${style.animate__me} ${style.animated}`}
           />
           <img
             src="images/dot__texture.png"
             alt="texture"
-            className={`${style.dot__texture} +' '+${style.animate__me} +' '+${style.animated}`}
+            className={`${style.dot__texture} ${style.animate__me} ${style.animated}`}
           />
         </div>
         <span
-          className={`${style.scroll__down} +' '+${style.animate__me} +' '+${style.animated}`}
+          className={`${style.scroll__down} ${style.animate__me} ${style.animated}`}
           id="scroll__me"
         >
           scroll down{" "}
           <img src="../../img/icons/scroll__down__arrow.png" alt="arrow" />
         </span>
-        <ul className="social__icon">
-          <li className="facebook">
+        <ul className={style.social__icon}>
+          <li className={style.facebook}>
             <a href="" title="Facebook" target="_blank">
               <svg
                 aria__hidden="true"
                 focusable="false"
                 data__prefix="fab"
                 data__icon="facebook__f"
-                className="svg__inline____fa fa__facebook__f fa__w__10"
+                className={`${style.svg__inline__fa} ${style.fa__facebook__f} ${style.fa__w__10}`}
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 320 512"
@@ -59,7 +62,7 @@ export default function Home() {
                 focusable="false"
                 data__prefix="fab"
                 data__icon="twitter"
-                className="svg__inline____fa fa__twitter fa__w__16"
+                className={`${style.svg__inline__fa} ${style.fa__twitter} ${style.fa__w__16}`}
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -71,14 +74,14 @@ export default function Home() {
               </svg>
             </a>
           </li>
-          <li className="linkedin">
+          <li className={style.linkedin}>
             <a href="" title="Linkedin" target="_blank">
               <svg
                 aria__hidden="true"
                 focusable="false"
                 data__prefix="fab"
                 data__icon="linkedin__in"
-                className="svg__inline____fa fa__linkedin__in fa__w__14"
+                className={`${style.svg__inline__fa} ${style.fa__linkedin__in} ${style.fa__w__14}`}
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -90,14 +93,14 @@ export default function Home() {
               </svg>
             </a>
           </li>
-          <li className="instagram">
+          <li className={style.instagram}>
             <a href="" title="Instagram" target="_blank">
               <svg
                 aria__hidden="true"
                 focusable="false"
                 data__prefix="fab"
                 data__icon="instagram"
-                className="svg__inline____fa fa__instagram fa__w__14"
+                className={`${style.svg__inline__fa} ${style.fa__instagram} ${style.fa__w__14}`}
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -111,16 +114,18 @@ export default function Home() {
           </li>
         </ul>
 
-        <div className="container">
-          <div className="content__wrapper">
-            <div className="hero__content">
-              <h1 className="animate__me animated">Hi! I\’m Belal</h1>
-              <h2 className="animate__me animated">
-                WordPress Expert and Front__end Developer
+        <div className={style.container}>
+          <div className={style.content__wrapper}>
+            <div className={style.hero__content}>
+              <h1 className={`${style.animate__me} ${style.animated}`}>
+                Привет! Это Павел!
+              </h1>
+              <h2 className={`${style.animate__me} ${style.animated}`}>
+                JavaScript fullstack developer
               </h2>
               <a
                 href="#"
-                className="hire__me link__default animate__me animated"
+                className={`${style.hire__me} ${style.link__default} ${style.animate__me} ${style.animated}`}
               >
                 Hire Me
                 <span>
