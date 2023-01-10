@@ -11,13 +11,7 @@ export default function Home() {
       <section className={`${style.hero__section} ${style.pos__relative}`}>
         <div className={style.overlay}></div>
 
-        <span className={style.vertical__logo}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            id="ps__logo_bgd"
-            viewBox="0 0 36.311 48.744"
-          />
-        </span>
+        <span className={style.vertical__logo}>PASA</span>
         <div className={style.hero__image__wrapper}>
           <span
             className={`${style.hero__image} ${style.animate__me} ${style.animated}`}
@@ -127,9 +121,9 @@ export default function Home() {
                 href="#"
                 className={`${style.hire__me} ${style.link__default} ${style.animate__me} ${style.animated}`}
               >
-                Hire Me
+                Пришли мне оффер
                 <span>
-                  <img src="images/arrow__right__white.png" alt="arrow" />
+                  <img src="images/arrow-right-white.png" alt="arrow" />
                 </span>
               </a>
             </div>
