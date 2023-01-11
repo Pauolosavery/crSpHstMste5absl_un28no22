@@ -19,7 +19,7 @@ export default function NavBar() {
               </li>
               <li>
                 <a href="#Portfolio" className={style.menu__link}>
-                  Мои работы
+                  Мои проекты
                 </a>
                 <ul className={style.menu__sub__list}>
                   <li>

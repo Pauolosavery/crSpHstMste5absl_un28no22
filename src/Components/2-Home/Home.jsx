@@ -11,13 +11,13 @@ export default function Home() {
       <section className={`${style.hero__section} ${style.pos__relative}`}>
         <div className={style.overlay}></div>
 
-        <span className={style.vertical__logo}>PASA</span>
+        {/* <span className={style.vertical__logo}>PASA</span> */}
         <div className={style.hero__image__wrapper}>
           <span
             className={`${style.hero__image} ${style.animate__me} ${style.animated}`}
           />
           <img
-            src="images/dot__texture.png"
+            src="images/dot-texture.png"
             alt="texture"
             className={`${style.dot__texture} ${style.animate__me} ${style.animated}`}
           />
@@ -26,8 +26,7 @@ export default function Home() {
           className={`${style.scroll__down} ${style.animate__me} ${style.animated}`}
           id="scroll__me"
         >
-          scroll down{" "}
-          <img src="../../img/icons/scroll__down__arrow.png" alt="arrow" />
+          ПОДРОБНЕЕ <img src="images/scroll-down-arrow.png" alt="↓" />
         </span>
         <ul className={style.social__icon}>
           <li className={style.facebook}>
@@ -123,7 +122,7 @@ export default function Home() {
               >
                 Пришли мне оффер
                 <span>
-                  <img src="images/arrow-right-white.png" alt="arrow" />
+                  <img src="images/arrow-right-white.png" alt="→" />
                 </span>
               </a>
             </div>
