@@ -8,7 +8,7 @@ export default function Skill() {
     <section className={style.skill}>
       <div className={style.container}>
         <a name="Skill" />
-        <h2 className={style.section__title}>My Skills</h2>
+        <h2 className={style.section__title}>мой стек</h2>
         <div className={style.skill__wrapper} id="me-working-skill">
           <span className={style.vertical__line} />
           {skills.map((s) => (
