@@ -4,8 +4,12 @@ export default function About() {
     <section className={style.about}>
       <a name="About" />
       <div className={style.about__wrapper}>
-        <h3>Обо мне</h3>
-        <p>Я на пути к успеху в разработке</p>
+        <h2 className={style.section__title}>Обо мне</h2>
+        <p>
+          Ищу лёгкую в общении команду с которой можно выполнять проекты
+          удалённо. Прошу не присылать тестовые задания с требованием DDD
+          паттернов ;)
+        </p>
       </div>
     </section>
   );
