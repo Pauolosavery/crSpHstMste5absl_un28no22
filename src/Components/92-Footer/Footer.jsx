@@ -5,9 +5,8 @@ export default function Footer() {
     <footer className={`${style.footer__section}`}>
       <div className={`${style.container}`}>
         <div className={`${style.copyright__text}`}>
-          &#169;{" "}
           <span className={`${style.update__year}`}>
-            <div>{new Date().getFullYear()}</div>
+            <div>&#169; {new Date().getFullYear()}</div>
           </span>{" "}
           Сайт создан мной
           <div>
@@ -42,7 +41,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a>akuna motata</a>
+            <a>ICONS</a>
           </li>
         </ul>
       </div>
