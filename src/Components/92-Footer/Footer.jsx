@@ -8,7 +8,7 @@ export default function Footer() {
           <span className={`${style.update__year}`}>
             <div>&#169; {new Date().getFullYear()}</div>
           </span>{" "}
-          Сайт создан мной
+          Сайт создан мной на React
           <div>
             Вдохновлён &#160;
             <a
