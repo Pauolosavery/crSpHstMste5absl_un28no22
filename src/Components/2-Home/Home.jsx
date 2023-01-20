@@ -22,12 +22,14 @@ export default function Home() {
             className={`${style.dot__texture} ${style.animate__me} ${style.animated}`}
           />
         </div>
-        <span
-          className={`${style.scroll__down} ${style.animate__me} ${style.animated}`}
-          id="scroll__me"
-        >
-          ПОДРОБНЕЕ <img src="images/scroll-down-arrow.png" alt="↓" />
-        </span>
+        <a href="#Skill">
+          <span
+            className={`${style.scroll__down} ${style.animate__me} ${style.animated}`}
+            id="scroll__me"
+          >
+            ПОДРОБНЕЕ <img src="images/scroll-down-arrow.png" alt="↓" />
+          </span>
+        </a>
         <ul className={style.social__icon}>
           <li className={style.facebook}>
             <a href="" title="Facebook" target="_blank">
