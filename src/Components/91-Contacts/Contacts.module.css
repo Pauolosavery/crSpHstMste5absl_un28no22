@@ -1,4 +1,38 @@
 .contacts {
-  background-color: #16171b;
+  background: #141519 url(../../img/bgd/service-bg.jpg) no-repeat center center /
+    cover;
+  position: relative;
+}
+
+.wrapper {
+  padding: 120px 0;
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 55px;
+}
+.title h2 {
+  text-transform: uppercase;
   color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.title svg {
+  width: 45px;
+  color: #f43534;
+}
+
+.c__wrapper {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
