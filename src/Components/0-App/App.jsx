@@ -22,7 +22,7 @@ function App() {
       {/* <Achievements /> */}
       {/* <SocialNetwork /> */}
       <Contacts />
-      <Footer />
+      {/* <Footer /> */}
       {/* <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
