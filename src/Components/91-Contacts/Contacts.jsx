@@ -47,6 +47,7 @@ export default function Contacts() {
               </div>
               <div className={style.input__email}>
                 <label for="email">Email *</label>
+                <a name="Send" />
                 <input
                   type="email"
                   name="email"

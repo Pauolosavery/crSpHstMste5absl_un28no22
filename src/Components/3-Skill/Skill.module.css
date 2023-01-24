@@ -64,11 +64,31 @@
 
 .skill__wrapper .vertical__line {
   display: block;
-  height: calc(100% + 80px);
+  height: calc(100% + 40px);
   width: 2px;
   background: #f43534;
   position: absolute;
   left: 50%;
   margin-left: -1px;
   top: -40px;
+}
+.vertical__line:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #f43534;
+  left: -7px;
+  top: 0;
+}
+.vertical__line:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #f43534;
+  left: -7px;
+  bottom: 0;
 }
