@@ -39,6 +39,7 @@
 }
 
 .section__title {
+  font-size: 90px;
   transform: translateX(-83px);
   transform: translate(0);
   position: relative;

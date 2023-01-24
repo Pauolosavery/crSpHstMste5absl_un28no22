@@ -1,28 +1,29 @@
 const projects = [
   {
-    title: "Пиццерия (онлайн заказ еды)",
+    title: "Пиццерия",
     position: "Fullstack",
     stack:
       "nodejs, PostgreSQL, React, redux, react-redux, thunk, MUI, cloudpayments",
-    discript: "#Pizza #online #shop",
+      img: "pizza.jpg",
+      link: "",
   },
   {
     title: "Приватные деловые кабины (SPA)",
     position: "Fullstack",
     stack: "nodejs, PostgreSQL, Bootstrap",
-    discript: "",
+    img: "framery.jpg",
   },
   {
     title: "StarWars API",
     position: "Frontend",
     stack: "Bootstrap",
-    discript: "",
+    img: "starwars.png",
   },
   {
     title: "Pokemon API",
     position: "Frontend",
     stack: "FluentUI",
-    discript: "",
+    img: "PokeAPI.jpg",
   },
 ];
 export default projects;

@@ -11,7 +11,7 @@ export default function Portfolio() {
         <ol className={style.wrapper}>
           {projects.map((site, i) => (
             <li>
-              <OneSite site={site} id={Math.random()} pos={i} />
+              <OneSite site={site} id={site.img} pos={i} />
             </li>
           ))}
         </ol>

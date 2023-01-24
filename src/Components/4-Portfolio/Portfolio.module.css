@@ -23,12 +23,13 @@
 .projects {
 }
 
-.portfolio__wrapper {
-  max-width: 1280px;
-  z-index: 2;
-  position: relative;
+.wrapper {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
 }
 .section__title {
+  font-size: 90px;
   transform: translateX(-83px);
   transform: translate(0);
   position: relative;
