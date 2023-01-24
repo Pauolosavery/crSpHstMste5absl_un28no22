@@ -118,15 +118,16 @@ export default function Home() {
               <h2 className={`${style.animate__me} ${style.animated}`}>
                 JavaScript fullstack developer
               </h2>
-              <a
-                href="#"
-                className={`${style.hire__me} ${style.link__default} ${style.animate__me} ${style.animated}`}
-              >
-                Пришли мне оффер
-                <span>
-                  <img src="images/arrow-right-white.png" alt="→" />
-                </span>
-              </a>
+              <label for="name">
+                <a
+                  className={`${style.hire__me} ${style.link__default} ${style.animate__me} ${style.animated}`}
+                >
+                  Написать
+                  <span>
+                    <img src="images/arrow-right-white.png" alt="→" />
+                  </span>
+                </a>
+              </label>
             </div>
           </div>
         </div>
