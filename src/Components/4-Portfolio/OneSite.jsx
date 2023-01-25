@@ -1,7 +1,5 @@
 import style from "./OneSite.module.css";
 export default function OneSite({ site }) {
-  console.log("🚀 ~ file: OneSite.jsx:3 ~ OneSite ~ site", site);
-
   return (
     <a className={style.single} href="#Home">
       <div className={style.img__wrapper}>
