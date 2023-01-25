@@ -3,13 +3,33 @@ export default function About() {
   return (
     <section className={style.about}>
       <a name="About" />
-      <div className={style.about__wrapper}>
-        <h2 className={style.section__title}>Обо мне</h2>
-        <p>
-          Ищу лёгкую в общении команду с которой можно выполнять проекты
-          удалённо. Прошу не присылать тестовые задания с требованием DDD
-          паттернов ;)
-        </p>
+      <div className={style.overlay} />
+      <div className={style.about__shape}>
+        <img
+          src={require("../../img/icons/about-shape.png")}
+          alt="O"
+          className={style.shape}
+        />
+        <span className={style.circle1} />
+      </div>
+      <div className={style.container}>
+        <img
+          src={require("../../img/icons/dot-texture-horizontal.png")}
+          alt="..."
+          className={style.dot__pattern}
+        />
+        <span className={style.about__img1} />
+        <div className={style.about__content}>
+          <h2>
+            Рад знакомству! Надеюсь Вам понравились мои проекты. На текущий
+            момент Я открыт к предложениям о работе.
+          </h2>
+          <h5>
+            Мечтаю найти команду с которой будет легко коммуницировать и
+            работать из любой точки планеты.
+          </h5>
+          <span className={style.about__img2} />
+        </div>
       </div>
     </section>
   );
