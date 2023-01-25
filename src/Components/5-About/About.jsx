@@ -12,7 +12,7 @@ export default function About() {
         />
         <span className={style.circle1} />
       </div>
-      <div className={style.container}>
+      <div className={style.about__container}>
         <img
           src={require("../../img/icons/dot-texture-horizontal.png")}
           alt="..."
