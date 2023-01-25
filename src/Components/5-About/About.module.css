@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: top center;
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .overlay {
@@ -48,7 +48,7 @@
   animation: circle1-move 5s linear infinite;
 }
 
-.about .container {
+.about__container {
   position: relative;
   display: flex;
   flex-flow: row;
@@ -57,28 +57,28 @@
 }
 
 @media (min-width: 1400px) {
-  .container {
+  .about__container {
     max-width: 1280px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .about__container {
     max-width: 1140px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .about__container {
     max-width: 960px;
   }
 }
 @media (min-width: 768px) {
-  .container {
+  .about__container {
     max-width: 720px;
   }
 }
 @media (min-width: 576px) {
-  .container {
+  .about__container {
     max-width: 540px;
   }
 }
@@ -100,5 +100,38 @@
   left: 4px;
   width: 320px;
   display: block;
-  background: url("../../img/bgd/hero-img-bg.jpg") no-repeat top left/cover;
+  background: url("../../img/bgd/hero-img-bg.jpg") no-repeat top center/cover;
+}
+
+.about__content {
+  z-index: 4;
+  position: relative;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 6px 100px 60px;
+}
+
+.about__content h2 {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  text-align: justify;
+  margin-bottom: 52px;
+  transition: all 1.2s ease 0.6s;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.about__content h5 {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  text-align: justify;
+  font-size: 22px;
+  line-height: 43px;
+  font-weight: 400;
+  max-width: 315px;
+  margin-left: auto;
+  transition: all 1.2s ease 0.8s;
 }
