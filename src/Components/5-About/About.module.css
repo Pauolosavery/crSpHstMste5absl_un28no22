@@ -4,7 +4,8 @@
   background-size: cover;
   background-position: top center;
   position: relative;
-  /* height: 100vh; */
+  color: #acacac;
+  height: 100vh;
 }
 
 .overlay {
@@ -53,23 +54,13 @@
   display: flex;
   flex-flow: row;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 576px) {
   .about__container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .about__container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 992px) {
-  .about__container {
-    max-width: 960px;
+    max-width: 540px;
   }
 }
 @media (min-width: 768px) {
@@ -77,16 +68,26 @@
     max-width: 720px;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .about__container {
-    max-width: 540px;
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .about__container {
+    max-width: 1280px;
   }
 }
 
 .dot__pattern {
   position: absolute;
-  left: -107px;
-  bottom: 20px;
+  left: -250px;
+  bottom: 175px;
   rotate: 90deg;
   display: block;
   max-width: 100%;
@@ -100,7 +101,18 @@
   left: 4px;
   width: 320px;
   display: block;
-  background: url("../../img/bgd/hero-img-bg.jpg") no-repeat top center/cover;
+  background: url("../../img/bgd/hero-img-bg1.jpg") no-repeat center
+    center/cover;
+}
+
+.about .about__img2 {
+  position: relative;
+  z-index: 2;
+  left: 4px;
+  width: 320px;
+  display: block;
+  background: url("../../img/bgd/hero-img-bg2.jpg") no-repeat center
+    center/cover;
 }
 
 .about__content {
@@ -134,4 +146,17 @@
   max-width: 315px;
   margin-left: auto;
   transition: all 1.2s ease 0.8s;
+}
+
+@media (max-width: 1199px) {
+  .about .about__content {
+    padding: 86px 6px 85px 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about .about__content {
+    max-width: 480px;
+    padding: 86px 6px 85px 20px;
+  }
 }

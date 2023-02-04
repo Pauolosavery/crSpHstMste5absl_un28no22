@@ -21,15 +21,15 @@ export default function About() {
         <span className={style.about__img1} />
         <div className={style.about__content}>
           <h2>
-            Рад знакомству! Надеюсь Вам понравились мои проекты. На текущий
+            Рад знакомству! Надеюсь, Вам понравились мои проекты. На текущий
             момент Я открыт к предложениям о работе.
           </h2>
           <h5>
             Мечтаю найти команду с которой будет легко коммуницировать и
             работать из любой точки планеты.
           </h5>
-          <span className={style.about__img2} />
         </div>
+        <span className={style.about__img2} />
       </div>
     </section>
   );
