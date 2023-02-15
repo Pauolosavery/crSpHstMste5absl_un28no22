@@ -8,7 +8,7 @@ export default function NavLogo() {
       <button>
         <div className={style.burger}>
           <span />
-          <span className={`${tyle.burger__center`}} />
+          <span className={`${style.burger__center` ${style.center__active}}} />
           <span />
         </div>
       </button>
