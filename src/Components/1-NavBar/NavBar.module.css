@@ -6,6 +6,9 @@
   width: 100%;
   height: 100vh;
   z-index: 10;
+}
+
+.header__active {
   background-color: #16171b;
   /* opacity: 98%; */
 }
@@ -64,6 +67,10 @@
 
 .header__menu {
   max-width: 1140px;
+}
+
+.menu__body__active {
+  visibility: hidden;
 }
 
 .menu__list > li {

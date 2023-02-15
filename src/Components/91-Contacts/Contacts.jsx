@@ -25,14 +25,14 @@ export default function Contacts() {
         </div>
         <div className={style.c__wrapper}>
           <div className={style.adress}>
-            <adress>
+            <div>
               <span>Проживаю :</span>
               <p>г. Санкт-Петербург</p>
               <span>E-mail :</span>
               <a href="milto:pavel.plekhanov.job@gmail.com">
                 pavel.plekhanov.job@gmail.com
               </a>
-            </adress>
+            </div>
           </div>
           <div className={style.form}>
             <form action="POST">

@@ -4,9 +4,9 @@ import style from "./ScrollTop.module.css";
 export default function ScrollTop() {
   const scrollEl = useRef(null);
   const [top, setTop] = useState(false);
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollY < 200 ? setTop(true) : setTop(false);
-  },[])
+  }, []);
   window.onscroll = () => {
     // const hasScrolling = !(window.scrollX === 0 && window.scrollY === 0);
     if (window.scrollY < 200) {
@@ -26,7 +26,7 @@ export default function ScrollTop() {
           focusable="false"
           data-prefix="fas"
           data-icon="angle-up"
-          class="svg-inline--fa fa-angle-up fa-w-10"
+          // class="svg-inline--fa fa-angle-up fa-w-10"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512"
