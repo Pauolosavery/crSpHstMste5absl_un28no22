@@ -14,28 +14,6 @@ export default function NavList() {
           <a href="#Portfolio" className={style.menu__link}>
             Мои проекты
           </a>
-          <ul className={style.menu__sub__list}>
-            <li>
-              <a href="" className={style.menu__sub__link}>
-                Пиццерия
-              </a>
-            </li>
-            <li>
-              <a href="" className={style.menu__sub__link}>
-                Приватные деловые кабины
-              </a>
-            </li>
-            <li>
-              <a href="" className={style.menu__sub__link}>
-                StarWars API
-              </a>
-            </li>
-            <li>
-              <a href="" className={style.menu__sub__link}>
-                Pokemon API
-              </a>
-            </li>
-          </ul>
         </li>
         <li>
           <a href="#About" className={style.menu__link}>

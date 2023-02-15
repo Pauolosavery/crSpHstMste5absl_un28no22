@@ -5,10 +5,12 @@ export default function NavLogo() {
   return (
     <div className={style.navMenu__header}>
       <a href="#Home" className={style.header__logo} />
-      <button className={style.burger}>
-        <span>___</span>
-        <span>___</span>
-        <span>___</span>
+      <button>
+        <div className={style.burger}>
+          <span />
+          <span className={`${tyle.burger__center`}} />
+          <span />
+        </div>
       </button>
     </div>
   );
