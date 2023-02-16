@@ -1,4 +1,3 @@
-import Footer from "../92-Footer/Footer";
 import style from "./Contacts.module.css";
 export default function Contacts() {
   return (
@@ -72,7 +71,6 @@ export default function Contacts() {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 }

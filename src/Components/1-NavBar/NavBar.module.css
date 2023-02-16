@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   z-index: 10;
 }
 
@@ -15,15 +15,13 @@
 
 .header__container {
   max-width: 1200px;
-  margin: 0px auto;
-  padding: 0px auto;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  min-height: 84px;
+  padding: 30px 30px;
+  height: 80vh;
 }
 
+.top {
+  background-color: #535353;
+}
 .navMenu__header {
   z-index: 12;
   height: 20vh;
@@ -69,13 +67,16 @@
   max-width: 1140px;
 }
 
-.menu__body__active {
-  visibility: hidden;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 84px;
 }
 
 .menu__list > li {
   position: relative;
-  margin: 0px 0px 32px 90px;
+  margin: 0px 0px 32px 0px;
 }
 
 .menu__link {
@@ -101,4 +102,9 @@
 .menu__sub__list li {
   display: inline;
   margin: 0px 0px 10px 0px;
+}
+
+.header__contacts,
+a {
+  color: #535353;
 }
