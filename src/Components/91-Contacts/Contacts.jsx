@@ -56,13 +56,13 @@ export default function Contacts() {
               </div>
               <div className={style.input__msg}>
                 <label for="message">Сообщение *</label>
-                <textarea
+                <input
                   name="message"
                   id="message"
                   cols="30"
                   rows="10"
                   placeholder="Текст письма"
-                ></textarea>
+                ></input>
               </div>
               <div className={style.input__submit}>
                 <button type="submit">ОТПРАВИТЬ</button>
