@@ -7,17 +7,12 @@ export default function NavLogo({ setActiveMenu, activeMenu, top }) {
   activeMenu
     ? (burgerStyle = style.burger__active)
     : (burgerStyle = style.burger);
-  // if (top) menuStyle += `${style.top}`;
   return (
     <div className={menuStyle}>
       <a href="#Home" className={style.navLogo__ico} />
       <button onClick={() => setActiveMenu(!activeMenu)}>
         <div className={burgerStyle}>
-          <span />
-          <span
-            className={`${style.burger__center} ${style.center__active}}`}
-          />
-          <span />
+          <span className={style.burger__line} />
         </div>
       </button>
     </div>

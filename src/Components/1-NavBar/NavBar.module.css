@@ -8,7 +8,25 @@
   height: 100vh;
   z-index: 10;
 }
+/*========= end Navbar*/
+/*========= Menu*/
+.menu {
+  height: 88vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 84px;
+}
+/*========= End Menu*/
+/*========= NavLogo*/
 
+/*========= End NavLogo*/
+/*========= NavList*/
+
+/*========= End NavList*/
+/*========= NavContact*/
+
+/*========= End NavContact*/
 .header__active {
   background-color: #16171b;
   /* opacity: 98%; */
@@ -20,11 +38,9 @@
   height: 80vh;
 }
 
-.top {
+/* .top {
   background-color: #535353;
-}
-
-/*========= end Navbar*/
+} */
 
 .navMenu__header {
   z-index: 12;
@@ -36,6 +52,7 @@
 .burger {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .burger__active span {
@@ -51,7 +68,7 @@
 .navMenu__header button {
   padding: 30px 30px 0px 0px;
   height: 100%;
-  width: 30vh;
+  width: 15vh;
   display: flex;
   align-content: center;
   justify-content: flex-end;
@@ -64,6 +81,18 @@
   margin: 0px 0px 10px 0px;
 }
 
+.burger span::before,
+.burger span,
+.burger span::after {
+  border: solid 2px #fff;
+  width: 40px;
+  margin: 0px 0px 10px 0px;
+}
+
+.burger span::before,
+.burger span::after {
+  content: "";
+}
 .navLogo__ico {
   position: relative;
   display: inline-block;
@@ -83,14 +112,6 @@
 
 .header__menu {
   max-width: 1140px;
-}
-
-.menu {
-  height: 88vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  min-height: 84px;
 }
 
 .menu__list > li {
@@ -128,3 +149,12 @@ a {
   color: #535353;
 }
 /*========= End NavContact*/
+
+/*==== Burger menu */
+
+/* .burger:hover span, */
+.navMenu__header:hover button .burger__center {
+  filter: brightness(0.5);
+  width: 30px;
+}
+/*==== End Burger menu */
