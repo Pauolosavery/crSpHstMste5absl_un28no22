@@ -5,12 +5,12 @@ export default function NavLogo({ setActiveMenu, activeMenu, top }) {
   let burgerStyle = "";
   let menuStyle = `${style.navMenu__header}`;
   activeMenu
-    ? (burgerStyle = `${style.header__contacts} ${style.header__contacts__active}`)
-    : (burgerStyle = style.header__contacts);
-  if (top) menuStyle += `${style.top}`;
+    ? (burgerStyle = style.burger__active)
+    : (burgerStyle = style.burger);
+  // if (top) menuStyle += `${style.top}`;
   return (
     <div className={menuStyle}>
-      <a href="#Home" className={style.header__logo} />
+      <a href="#Home" className={style.navLogo__ico} />
       <button onClick={() => setActiveMenu(!activeMenu)}>
         <div className={burgerStyle}>
           <span />
