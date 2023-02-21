@@ -3,7 +3,10 @@ import style from "./NavBar.module.css";
 
 export default function NavLogo({ setActiveMenu, activeMenu, top }) {
   let burgerStyle = "";
-  let menuStyle = `${style.navMenu__header}`;
+  let menuStyle = "";
+  top
+    ? (menuStyle = `${style.navLogo}`)
+    : (menuStyle = `${style.navLogo} ${style.top}`);
   activeMenu
     ? (burgerStyle = style.burger__active)
     : (burgerStyle = style.burger);
