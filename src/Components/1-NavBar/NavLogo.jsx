@@ -2,21 +2,30 @@
 import style from "./NavBar.module.css";
 
 export default function NavLogo({ setActiveMenu, activeMenu, top }) {
-  let burgerStyle = "";
+  let lineCenterStyle = "";
+  let lineStyle = "";
   let menuStyle = "";
   top
     ? (menuStyle = `${style.navLogo}`)
     : (menuStyle = `${style.navLogo} ${style.top}`);
   activeMenu
-    ? (burgerStyle = style.burger__active)
-    : (burgerStyle = style.burger);
+    ? (lineCenterStyle = style.navLogo__burger__line__active)
+    : (lineCenterStyle = style.navLogo__burger__line);
+  activeMenu
+    ? (lineStyle = style.navLogo__burger__line1__active)
+    : (lineStyle = style.navLogo__burger__line1);
   return (
     <div className={menuStyle}>
       <a href="#Home" className={style.navLogo__ico} />
-      <button onClick={() => setActiveMenu(!activeMenu)}>
-        <div className={burgerStyle}>
-          <span className={style.burger__line} />
-        </div>
+      <button
+        onClick={() => setActiveMenu(!activeMenu)}
+        className={style.navLogo__burger}
+      >
+        {/* <div > */}
+        <span className={lineStyle} />
+        <span className={lineCenterStyle} />
+        <span className={lineStyle} />
+        {/* </div> */}
       </button>
     </div>
   );
