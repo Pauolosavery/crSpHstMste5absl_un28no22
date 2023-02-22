@@ -10,8 +10,6 @@ export default function Home() {
       <span className={`${style.vertical__line} ${style.line5}`} />
       <section className={`${style.hero__section} ${style.pos__relative}`}>
         <div className={style.overlay}></div>
-
-        {/* <span className={style.vertical__logo}>PASA</span> */}
         <div className={style.hero__image__wrapper}>
           <span
             className={`${style.hero__image} ${style.animate__me} ${style.animated}`}

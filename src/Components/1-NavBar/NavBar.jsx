@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Menu from "./Menu";
 import style from "./NavBar.module.css";
-import NavLogo from "./NavLogo";
+import NavHeader from "./NavHeader";
 import ScrollTop from "./ScrollTop.jsx";
 
 export default function NavBar() {
@@ -21,16 +21,16 @@ export default function NavBar() {
   const [activeMenu, setActiveMenu] = useState(false);
   let headerStyle = "";
   activeMenu
-    ? (headerStyle = `${style.header} ${style.header__active}`)
-    : (headerStyle = `${style.header}`);
+    ? (headerStyle = `${style.nav__bar} ${style.nav__bar__active}`)
+    : (headerStyle = `${style.nav__bar}`);
   return (
     <header className={headerStyle}>
-      <NavLogo
+      <NavHeader
         setActiveMenu={setActiveMenu}
         activeMenu={activeMenu}
         top={top}
       />
-      {activeMenu ? <Menu /> : null}
+      {activeMenu ? <Menu setActiveMenu={setActiveMenu} /> : null}
       {top ? null : <ScrollTop />}
     </header>
   );

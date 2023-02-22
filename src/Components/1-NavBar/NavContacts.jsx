@@ -1,23 +1,21 @@
 //<a href="https://preview.themeforest.net/item/onlyme-one-page-personal-portfolio/full_screen_preview/25624595">
 import style from "./NavBar.module.css";
-
-export default function NavContacts({ activeMenu }) {
-  // let contcStyle = "";
-  // activeMenu
-  //   ? (contcStyle = `${style.header__contacts} ${style.header__contacts__active}`)
-  //   : (contcStyle = style.header__contacts);
+const contactLinks = [
+  ["plekhanov.pavel.job@gmail.com", "mailto:plekhanov.pavel.job@gmail.com"],
+  ["https://t.me/pavel_trader", "Telegram"],
+  ["LINKEDIN", "https://linkedin.com/in/pavelplekhanov"],
+];
+export default function NavContacts({ setActiveMenu }) {
   return (
-    <div className={style.header__contacts}>
+    <div className={style.nav__contacts}>
       <ul>
-        <li>
-          <a href="mailto:plekhanov.pavel.job@gmail.com">
-            plekhanov.pavel.job@gmail.com
-          </a>
-        </li>
-        <li>
-          <a href="https://t.me/pavel_trader">Telegram</a>
-        </li>
-        <li>LINKEDIN</li>
+        {contactLinks.map((li) => (
+          <li>
+            <a href={li[1]} onClick={() => setActiveMenu(false)}>
+              {li[0]}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

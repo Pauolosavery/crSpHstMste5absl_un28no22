@@ -43,6 +43,7 @@
   width: 268px;
 }
 .hero__section {
+  height: 100vh;
   background: #16171b url("../../img/bgd/hero-bg-img1.jpg") no-repeat;
   background-position: center top;
   background-size: 100% 100%;

@@ -3,11 +3,11 @@ import style from "./NavBar.module.css";
 import NavContacts from "./NavContacts";
 import NavList from "./NavList";
 
-export default function Menu() {
+export default function Menu({ setActiveMenu }) {
   return (
     <div className={style.menu}>
-      <NavList />
-      <NavContacts />
+      <NavList setActiveMenu={setActiveMenu} />
+      <NavContacts setActiveMenu={setActiveMenu} />
     </div>
   );
 }

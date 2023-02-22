@@ -1,30 +1,24 @@
-//<a href="https://preview.themeforest.net/item/onlyme-one-page-personal-portfolio/full_screen_preview/25624595">
+//<a href='https://preview.themeforest.net/item/onlyme-one-page-personal-portfolio/full_screen_preview/25624595'>
 import style from "./NavBar.module.css";
 
-export default function NavList() {
+export default function NavList({ setActiveMenu }) {
+  const menuLinks = [
+    ["Мой стек", "#Skill"],
+    ["Мои проекты", "#Portfolio"],
+    ["Обо мне", "#About"],
+    ["Связаться", "#Contact"],
+  ];
+
   return (
-    <nav className={style.menu__body}>
-      <ul className={style.menu__list}>
-        <li>
-          <a href="#Skill" className={style.menu__link}>
-            Мой стек
-          </a>
-        </li>
-        <li>
-          <a href="#Portfolio" className={style.menu__link}>
-            Мои проекты
-          </a>
-        </li>
-        <li>
-          <a href="#About" className={style.menu__link}>
-            Обо мне
-          </a>
-        </li>
-        <li>
-          <a href="#Contact" className={style.menu__link}>
-            Связаться
-          </a>
-        </li>
+    <nav className={style.nav__list__body}>
+      <ul className={style.nav__list__menu}>
+        {menuLinks.map((li) => (
+          <li>
+            <a href={li[1]} onClick={() => setActiveMenu(false)}>
+              {li[0]}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
