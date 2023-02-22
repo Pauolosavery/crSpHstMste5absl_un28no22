@@ -1,12 +1,20 @@
-.header {
-  /* visibility: hidden; */
+.nav__bar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
 }
-
+.nav__bar__active {
+  background-color: #16171b;
+  height: 100vh;
+  overflow-y: hidden;
+}
+/* 
+.nav__bar__active #body {
+  overflow: hidden;
+  background-color: yellowgreen;
+} */
 .navLogo {
   z-index: 12;
   height: 75px;
@@ -28,7 +36,7 @@
   background-image: url("../../img/icons/PS.svg");
 }
 
-.navLogo__burger {
+.navLogo__btn {
   position: relative;
   width: 60px;
   height: 60px;
@@ -39,86 +47,57 @@
   padding: 10px;
 }
 
-.navLogo__burger:hover .navLogo__burger__line {
+.navLogo__burger__line__up,
+.navLogo__burger__line__down {
   width: 35px;
+  height: 3px;
+  background-color: #fff;
 }
 
-.navLogo__burger__line__active {
+.navLogo__burger__line__med {
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+
+.navLogo__btn:hover .navLogo__burger__line__med {
+  width: 35px;
+  transition: all 0.5s ease;
+}
+
+.navLogo__btn__a {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.navLogo__burger__line__med__a {
   visibility: hidden;
 }
 
-.navLogo__burger__line1__active {
-  width: 20px;
-  height: 3px;
-  background-color: #fff;
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+.navLogo__burger__line__up__a {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+  width: 50px;
+  transform: translateY(50%) rotate(45deg);
+  transition: all 0.5s ease;
 }
-
-.navLogo__burger__line,
-.navLogo__burger__line1 {
-  /* position: absolute; */
-  width: 20px;
-  height: 3px;
-  background-color: #fff;
-  /* margin: auto 5px; */
-  /* transform: translate(-50%, -50%);
-  transform: translateZ(0) scale(1, 1); */
+.navLogo__burger__line__down__a {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+  width: 50px;
+  transform-origin: center;
+  transform: translateY(50%) rotate(-45deg);
+  transition: all 0.5s ease;
 }
-
-.navLogo__burger__line1 {
-  width: 35px;
-}
-
-/* .burger__active span {
-  border: solid 2px #f43534;
-  width: 40px;
-  margin: 0px 0px 10px 0px;
-  display: flex;
-  flex-direction: column;
-  rotate: 45deg;
-} */
-
-/* .burger span {
-  border: solid 2px #fff;
-  width: 40px;
-  margin: 0px 0px 10px 0px;
-} */
-
-/* .burger span::before,
-.burger span,
-.burger span::after {
-  border: solid 2px #fff;
-  width: 40px;
-  margin: 0px 0px 10px 0px;
-} */
-
-/* .burger span::before,
-.burger span::after {
-  content: "";
-} */
-
 .top {
   background: linear-gradient(#16171be3 60%, #ff000000);
-  /* background-color: #16171bcc; */
 }
-
-/* .menu {
-  height: 88vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  min-height: 84px;
-} */
-
-/* .header__container {
-  max-width: 1200px;
-  padding: 30px 30px;
-  height: 80vh;
-} */
 
 .navMenu__header button {
   padding: 30px 30px 0px 0px;
@@ -128,18 +107,6 @@
   align-content: center;
   justify-content: flex-end;
   align-items: flex-start;
-}
-
-.header__menu {
-  max-width: 1140px;
-}
-
-.nav__list__body {
-}
-.nav__list__menu {
-}
-
-.nav__contacts {
 }
 
 .menu__link:hover {

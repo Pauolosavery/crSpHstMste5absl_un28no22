@@ -2,30 +2,31 @@
 import style from "./NavBar.module.css";
 
 export default function NavLogo({ setActiveMenu, activeMenu, top }) {
-  let lineCenterStyle = "";
-  let lineStyle = "";
-  let menuStyle = "";
-  top
-    ? (menuStyle = `${style.navLogo}`)
-    : (menuStyle = `${style.navLogo} ${style.top}`);
-  activeMenu
-    ? (lineCenterStyle = style.navLogo__burger__line__active)
-    : (lineCenterStyle = style.navLogo__burger__line);
-  activeMenu
-    ? (lineStyle = style.navLogo__burger__line1__active)
-    : (lineStyle = style.navLogo__burger__line1);
+  const menuStyle = {
+    navLogo: style.navLogo,
+    navLogo__btn: style.navLogo__btn,
+    lineUp: style.navLogo__burger__line__up,
+    lineMed: style.navLogo__burger__line__med,
+    lineDown: style.navLogo__burger__line__down,
+  };
+  if (!top) menuStyle.navLogo += ` ${style.top}`;
+  if (activeMenu) {
+    menuStyle.navLogo += ` ${style.navLogo__active}`;
+    menuStyle.navLogo__btn = style.navLogo__btn__a;
+    menuStyle.lineUp += ` ${style.navLogo__burger__line__up__a}`;
+    menuStyle.lineMed += ` ${style.navLogo__burger__line__med__a}`;
+    menuStyle.lineDown += ` ${style.navLogo__burger__line__down__a}`;
+  }
   return (
-    <div className={menuStyle}>
+    <div className={menuStyle.navLogo}>
       <a href="#Home" className={style.navLogo__ico} />
       <button
         onClick={() => setActiveMenu(!activeMenu)}
-        className={style.navLogo__burger}
+        className={menuStyle.navLogo__btn}
       >
-        {/* <div > */}
-        <span className={lineStyle} />
-        <span className={lineCenterStyle} />
-        <span className={lineStyle} />
-        {/* </div> */}
+        <span className={menuStyle.lineUp} />
+        <span className={menuStyle.lineMed} />
+        <span className={menuStyle.lineDown} />
       </button>
     </div>
   );
