@@ -10,8 +10,8 @@ export default function NavList({ setActiveMenu }) {
   ];
 
   return (
-    <nav className={style.nav__list__body}>
-      <ul className={style.nav__list__menu}>
+    <nav className={style.navList__body}>
+      <ul className={style.navList__menu}>
         {menuLinks.map((li) => (
           <li>
             <a href={li[1]} onClick={() => setActiveMenu(false)}>

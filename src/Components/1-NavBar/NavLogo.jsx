@@ -16,6 +16,7 @@ export default function NavLogo({ setActiveMenu, activeMenu, top }) {
     menuStyle.lineUp += ` ${style.navLogo__burger__line__up__a}`;
     menuStyle.lineMed += ` ${style.navLogo__burger__line__med__a}`;
     menuStyle.lineDown += ` ${style.navLogo__burger__line__down__a}`;
+    document.body.style = "overflow: hidden";
   }
   return (
     <div className={menuStyle.navLogo}>

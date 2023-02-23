@@ -10,11 +10,7 @@
   height: 100vh;
   overflow-y: hidden;
 }
-/* 
-.nav__bar__active #body {
-  overflow: hidden;
-  background-color: yellowgreen;
-} */
+
 .navLogo {
   z-index: 12;
   height: 75px;
@@ -52,6 +48,7 @@
   width: 35px;
   height: 3px;
   background-color: #fff;
+  transition: all 0.5s ease;
 }
 
 .navLogo__burger__line__med {
@@ -99,34 +96,8 @@
   background: linear-gradient(#16171be3 60%, #ff000000);
 }
 
-.navMenu__header button {
-  padding: 30px 30px 0px 0px;
-  height: 100%;
-  width: 15vh;
-  display: flex;
-  align-content: center;
-  justify-content: flex-end;
-  align-items: flex-start;
+.menu {
+  height: calc(100vh - 75px);
 }
-
-.menu__link:hover {
-  color: #f43534;
-}
-.menu__sub__list {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #16171b;
-  padding: 15px;
-  min-width: 200px;
-}
-
-.menu__sub__list li {
-  display: inline;
-  margin: 0px 0px 10px 0px;
-}
-
-.header__contacts,
-a {
-  color: #535353;
+.navList__body {
 }
