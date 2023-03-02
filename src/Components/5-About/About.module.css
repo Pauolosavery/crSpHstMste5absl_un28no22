@@ -1,6 +1,6 @@
 .about {
   overflow: hidden;
-  background: url("../../img/icons/about-bg.jpg") no-repeat;
+  background: url("../../images/icons/about-bg.jpg") no-repeat;
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -101,7 +101,7 @@
   left: 4px;
   width: 320px;
   display: block;
-  background: url("../../img/bgd/hero-img-bg1.jpg") no-repeat center
+  background: url("../../images/bgd/hero-img-bg1.jpg") no-repeat center
     center/cover;
 }
 
@@ -111,7 +111,7 @@
   left: 4px;
   width: 320px;
   display: block;
-  background: url("../../img/bgd/hero-img-bg2.jpg") no-repeat center
+  background: url("../../images/bgd/hero-img-bg2.jpg") no-repeat center
     center/cover;
 }
 
