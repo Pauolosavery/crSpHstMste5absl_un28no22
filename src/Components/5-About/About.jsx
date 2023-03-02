@@ -6,7 +6,7 @@ export default function About() {
       <div className={style.overlay} />
       <div className={style.about__shape}>
         <img
-          src={require("../../img/icons/about-shape.png")}
+          src={require("../../images/icons/about-shape.png")}
           alt="O"
           className={style.shape}
         />
@@ -14,7 +14,7 @@ export default function About() {
       </div>
       <div className={style.about__container}>
         <img
-          src={require("../../img/icons/dot-texture-horizontal.png")}
+          src={require("../../images/icons/dot-texture-horizontal.png")}
           alt="..."
           className={style.dot__pattern}
         />

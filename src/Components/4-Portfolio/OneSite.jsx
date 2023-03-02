@@ -4,7 +4,7 @@ export default function OneSite({ site }) {
     <a className={style.single} href="#Home">
       <div className={style.img__wrapper}>
         <img
-          src={require(`../../img/icons/${site.img}`)}
+          src={require(`../../images/icons/${site.img}`)}
           alt={`${site.title}`}
         />
       </div>
