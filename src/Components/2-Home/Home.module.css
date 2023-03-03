@@ -138,7 +138,8 @@
   transform: rotate(-90deg);
 }
 
-.hero__section .vertical__logo svg {
+.hero__section .container a {
+  color: #ccc;
 }
 
 .hero__section .social__icon {
