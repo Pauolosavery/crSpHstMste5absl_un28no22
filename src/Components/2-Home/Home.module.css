@@ -44,7 +44,7 @@
 }
 .hero__section {
   height: 100vh;
-  background: #16171b url("../../img/bgd/hero-bg-img1.jpg") no-repeat;
+  background: #16171b url("../../images/bgd/hero-bg-img1.jpg") no-repeat;
   background-position: center top;
   background-size: 100% 100%;
 }
@@ -105,7 +105,7 @@
   height: 100%;
   display: block;
   z-index: 2;
-  background: url(../../img/bgd/hero-img-bg.jpg) no-repeat center right/cover;
+  background: url(../../images/bgd/hero-img-bg.jpg) no-repeat center right/cover;
 }
 
 .hero__section .hero__image:before {
@@ -200,7 +200,7 @@
   z-index: 4;
 }
 .hero__section .hero__content h1 {
-  background: url("../../img/icons/hero-title-pettern-bg.png") no-repeat 95%
+  background: url("../../images/icons/hero-title-pettern-bg.png") no-repeat 95%
     center / contain;
   font-size: 142px;
   line-height: 0.8;
@@ -249,6 +249,10 @@
 
 .hero__section .hero__content .link__default span:hover {
   box-shadow: 0 10px 20px -8px #f43534;
+}
+
+.hero__section a {
+  color: #ccc;
 }
 
 @-webkit-keyframes scroll__down-move {

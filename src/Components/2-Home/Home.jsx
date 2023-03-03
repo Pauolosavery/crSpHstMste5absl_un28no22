@@ -15,7 +15,7 @@ export default function Home() {
             className={`${style.hero__image} ${style.animate__me} ${style.animated}`}
           />
           <img
-            src="images/dot-texture.png"
+            src={require("../../images/dot-texture.png")}
             alt="texture"
             className={`${style.dot__texture} ${style.animate__me} ${style.animated}`}
           />
@@ -25,7 +25,8 @@ export default function Home() {
             className={`${style.scroll__down} ${style.animate__me} ${style.animated}`}
             id="scroll__me"
           >
-            ПОДРОБНЕЕ <img src="images/scroll-down-arrow.png" alt="↓" />
+            ПОДРОБНЕЕ{" "}
+            <img src={require("../../images/scroll-down-arrow.png")} alt="↓" />
           </span>
         </a>
         <ul className={style.social__icon}>
@@ -122,7 +123,10 @@ export default function Home() {
                 >
                   Написать
                   <span>
-                    <img src="images/arrow-right-white.png" alt="→" />
+                    <img
+                      src={require("../../images/arrow-right-white.png")}
+                      alt="→"
+                    />
                   </span>
                 </a>
               </label>
