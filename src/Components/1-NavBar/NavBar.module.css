@@ -131,18 +131,12 @@
   justify-content: space-evenly;
 }
 
-.nav__contacts__telegram {
-  display: block;
-  height: 40px;
-  width: 40px;
-  background-color: #f43534;
+.nav__contacts__social ul {
+  display: flex;
 }
 
-.nav__contacts__hh,
-.nav__contacts__ln,
-.nav__contacts__tlg,
-.nav__contacts__cv {
+.nav__contacts__icons {
   height: 40px;
   width: 40px;
-  fill: #acacac;
+  fill: none;
 }

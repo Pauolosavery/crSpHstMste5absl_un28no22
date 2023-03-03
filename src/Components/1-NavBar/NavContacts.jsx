@@ -1,10 +1,27 @@
 //<a href="https://preview.themeforest.net/item/onlyme-one-page-personal-portfolio/full_screen_preview/25624595">
 import style from "./NavBar.module.css";
+import { ReactComponent as Cv } from "../../images/icons/contact-icon-cv.svg";
+import { ReactComponent as Tlg } from "../../images/icons/contact-icon-tlg.svg";
+import { ReactComponent as Hh } from "../../images/icons/contact-icon-hh.svg";
+import { ReactComponent as In } from "../../images/icons/contact-icon-in.svg";
+
 const contactLinks = [
-  ["https://t.me/pavel_trader", "Telegram"],
-  ["LINKEDIN", "https://linkedin.com/in/pavelplekhanov"],
-  ["HeadHunter", "https://hh.ru/pavelplekhanov"],
+  [
+    <Cv />,
+    "Резюме на русском",
+    "/public/files/CV_Fullstack_Pavel.Plekhanov.txt",
+    "contact-icon-cv.svg",
+  ],
+  [<Tlg />, "Telegram", "https://t.me/pavel_trader", "contact-icon-tlg.svg"],
+  [<Hh />, "HeadHunter", "https://hh.ru/pavelplekhanov", "contact-icon-hh.svg"],
+  [
+    <In />,
+    "LinkedIn",
+    "https://linkedin.com/in/pavelplekhanov",
+    "contact-icon-in.svg",
+  ],
 ];
+
 export default function NavContacts({ setActiveMenu }) {
   return (
     <div className={style.nav__contacts}>
@@ -19,55 +36,27 @@ export default function NavContacts({ setActiveMenu }) {
       </div>
       <div className={style.nav__contacts__social}>
         <ul>
-          {contactLinks.map((li) => (
-            <li>
-              <a href={li[1]} onClick={() => setActiveMenu(false)}>
-                {li[0]}
-              </a>
-            </li>
-          ))}
+          <li>
+            <a href={contactLinks[0][2]} onClick={() => setActiveMenu(false)}>
+              <Cv className={style.nav__contacts__icons} />
+            </a>
+          </li>
+          <li>
+            <a href={contactLinks[1][2]} onClick={() => setActiveMenu(false)}>
+              <Tlg className={style.nav__contacts__icons} />
+            </a>
+          </li>
+          <li>
+            <a href={contactLinks[2][2]} onClick={() => setActiveMenu(false)}>
+              <Hh className={style.nav__contacts__icons} />
+            </a>
+          </li>
+          <li>
+            <a href={contactLinks[3][2]} onClick={() => setActiveMenu(false)}>
+              <In width="40px" fill="#ccc" stroke="#ccc" />
+            </a>
+          </li>
         </ul>
-        <a href="" title="hh" target="_blank">
-          <svg
-            className={style.nav__contacts__hh}
-            id="hh"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              class="cls-1"
-              d="M100,0A100,100,0,1,0,200,100,100,100,0,0,0,100,0ZM96.1,143H80V110.2c0-6.5-.3-10.6-.9-12.4a8.36,8.36,0,0,0-3.2-4.2A10.44,10.44,0,0,0,70.1,92,12.84,12.84,0,0,0,63,94a10.89,10.89,0,0,0-4.6,6c-1,2.7-1.5,6.6-1.5,11.8v31.1H40.8v-88H56.9v34q7.8-9.3,18.6-9.3a23.25,23.25,0,0,1,10,2.1,16,16,0,0,1,6.7,5.4,20.67,20.67,0,0,1,3.1,7.3c.6,2.6.8,6.7.8,12.3Zm63.4,0H143.4V110.2c0-6.5-.3-10.6-.9-12.4a8.36,8.36,0,0,0-3.2-4.2,10.44,10.44,0,0,0-5.8-1.6,12.84,12.84,0,0,0-7.1,2,11.35,11.35,0,0,0-4.6,6c-1,2.7-1.5,6.6-1.5,11.8V143H104.2V54.9h16.1v34q7.8-9.3,18.6-9.3a23.25,23.25,0,0,1,10,2.1,16,16,0,0,1,6.7,5.4,20.67,20.67,0,0,1,3.1,7.3c.6,2.6.8,6.7.8,12.3V143Z"
-              transform="translate(0 0)"
-            />
-          </svg>
-          <svg
-            className={style.nav__contacts__ln}
-            xmlns="http://www.w3.org/2000/svg"
-            // transform="scale(1.2)"
-          >
-            <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403 c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8 h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z" />
-          </svg>
-          <svg
-            className={style.nav__contacts__tlg}
-            version="1.1"
-            id="Слой_1"
-            xmlns="http://www.w3.org/2000/svg"
-            // transform="scale(1.2)"
-          >
-            <path
-              d="M36.9,22.5c-0.2,0-0.4,0.1-0.6,0.1c-0.2,0.1-0.8,0.3-1.8,0.8c-1,0.4-2.4,1-3.8,1.6c-2.9,1.2-6.2,2.6-7.8,3.4
-	c-0.1,0-0.3,0.1-0.5,0.3c-0.2,0.2-0.5,0.6-0.5,1c0,0.3,0.2,0.7,0.4,0.9c0.2,0.2,0.4,0.3,0.6,0.4c0.7,0.3,2.7,1.1,3.1,1.3
-	c0.1,0.4,0.9,2.7,1.1,3.3c0.1,0.4,0.2,0.6,0.4,0.8c0.1,0.1,0.2,0.2,0.3,0.2c0,0,0.1,0,0.1,0.1l0,0c0,0,0,0,0,0c0,0,0,0,0.1,0
-	c0.1,0,0.2,0.1,0.3,0.1c0.4,0,0.6-0.2,0.6-0.2l0,0l2.1-1.8l2.5,2.4c0,0,0.4,0.5,1.1,0.5c0.4,0,0.8-0.2,1-0.4s0.4-0.5,0.4-0.8v0
-	c0.1-0.3,2.3-12.1,2.3-12.1l0,0c0.1-0.3,0.1-0.6,0-0.9c-0.1-0.3-0.3-0.6-0.5-0.7C37.4,22.5,37.1,22.5,36.9,22.5z M36.8,23.9
-	C36.8,23.9,36.8,23.9,36.8,23.9L36.8,23.9L36.8,23.9c0,0-2.3,11.7-2.4,12.1c0,0,0,0-0.1,0.1c0,0-0.1-0.1-0.1-0.1l0,0l-3.4-3.2
-	l-2.4,2.1l0.7-2.9c0,0,4.5-4.6,4.7-4.9c0.2-0.2,0.3-0.3,0.3-0.4c0-0.1-0.1-0.2-0.2-0.2c-0.1,0-0.2,0.1-0.3,0.1
-	c-1,0.6-5.3,3.1-7.2,4.2c-0.3-0.1-2.4-1-3.1-1.3c0,0,0,0,0,0c1.7-0.7,4.9-2.1,7.8-3.4c1.4-0.6,2.8-1.2,3.8-1.6
-	C36,24.2,36.7,23.9,36.8,23.9z"
-            />
-          </svg>
-
-          {/* className={style.nav__contacts__cv} */}
-        </a>
       </div>
     </div>
   );
