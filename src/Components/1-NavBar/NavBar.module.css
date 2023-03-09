@@ -131,12 +131,32 @@
   justify-content: space-evenly;
 }
 
+.nav__contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #f43534;
+}
+
+.nav__contacts__email {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__contacts span {
+  margin: 0 0 10px;
+}
+
 .nav__contacts__social ul {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav__contacts__social a {
+  display: block;
+  height: 40px;
 }
 
 .nav__contacts__icons {
-  height: 40px;
-  width: 40px;
-  fill: none;
+  fill: #acacac;
 }

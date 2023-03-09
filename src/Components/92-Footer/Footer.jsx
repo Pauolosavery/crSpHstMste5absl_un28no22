@@ -1,4 +1,5 @@
 import style from "./Footer.module.css";
+import { ReactComponent as Hh } from "../../images/icons/contact-icon-hh.svg";
 
 export default function Footer() {
   return (
@@ -32,6 +33,7 @@ export default function Footer() {
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
+                fill="#ccc"
               >
                 <path
                   fill="currentColor"

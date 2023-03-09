@@ -54,3 +54,10 @@
 .footer__section .container .social__icon li {
   margin-left: 5px;
 }
+
+.nav__contacts__icons_hh {
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  background-image: url("../../images/icons/contact-icon-hh.svg");
+}

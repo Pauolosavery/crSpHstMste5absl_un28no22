@@ -7,15 +7,25 @@ import { ReactComponent as In } from "../../images/icons/contact-icon-in.svg";
 
 const contactLinks = [
   [
-    <Cv />,
+    <Cv className={style.nav__contacts__icons} />,
     "Резюме на русском",
     "/public/files/CV_Fullstack_Pavel.Plekhanov.txt",
     "contact-icon-cv.svg",
   ],
-  [<Tlg />, "Telegram", "https://t.me/pavel_trader", "contact-icon-tlg.svg"],
-  [<Hh />, "HeadHunter", "https://hh.ru/pavelplekhanov", "contact-icon-hh.svg"],
   [
-    <In />,
+    <Tlg className={style.nav__contacts__icons} />,
+    "Telegram",
+    "https://t.me/pavel_trader",
+    "contact-icon-tlg.svg",
+  ],
+  [
+    <Hh className={style.nav__contacts__icons} />,
+    "HeadHunter",
+    "https://hh.ru/pavelplekhanov",
+    "contact-icon-hh.svg",
+  ],
+  [
+    <In className={style.nav__contacts__icons} />,
     "LinkedIn",
     "https://linkedin.com/in/pavelplekhanov",
     "contact-icon-in.svg",
@@ -26,7 +36,7 @@ export default function NavContacts({ setActiveMenu }) {
   return (
     <div className={style.nav__contacts}>
       <div className={style.nav__contacts__email}>
-        <span> Напиши мне </span>
+        <span> Моя почта </span>
         <a
           href="mailto:plekhanov.pavel.job@gmail.com"
           onClick={() => setActiveMenu(false)}
@@ -35,27 +45,15 @@ export default function NavContacts({ setActiveMenu }) {
         </a>
       </div>
       <div className={style.nav__contacts__social}>
+        <h4> Резюме </h4>
         <ul>
-          <li>
-            <a href={contactLinks[0][2]} onClick={() => setActiveMenu(false)}>
-              <Cv className={style.nav__contacts__icons} />
-            </a>
-          </li>
-          <li>
-            <a href={contactLinks[1][2]} onClick={() => setActiveMenu(false)}>
-              <Tlg className={style.nav__contacts__icons} />
-            </a>
-          </li>
-          <li>
-            <a href={contactLinks[2][2]} onClick={() => setActiveMenu(false)}>
-              <Hh className={style.nav__contacts__icons} />
-            </a>
-          </li>
-          <li>
-            <a href={contactLinks[3][2]} onClick={() => setActiveMenu(false)}>
-              <In width="40px" fill="#ccc" stroke="#ccc" />
-            </a>
-          </li>
+          {contactLinks.map((li) => (
+            <li>
+              <a href={li[2]} onClick={() => setActiveMenu(false)}>
+                {li[0]}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
