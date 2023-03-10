@@ -134,7 +134,6 @@
 .nav__contacts {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   color: #f43534;
 }
 
@@ -147,16 +146,22 @@
   margin: 0 0 10px;
 }
 
+.nav__contacts__social {
+  width: 30%;
+}
+
 .nav__contacts__social ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
+
 .nav__contacts__social a {
   display: block;
   height: 40px;
+  width: 40px;
 }
 
-.nav__contacts__icons {
-  fill: #acacac;
+.nav__contacts h4 {
+  margin: 0 0 10px 0;
 }

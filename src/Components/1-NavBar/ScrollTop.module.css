@@ -28,6 +28,8 @@
   top: 3px;
 }
 
-/* @media (max-width: 1199px) .scroll__top {
-  bottom: 90px;
-} */
+@media (max-width: 1199px) {
+  .scroll__top {
+    bottom: 90px;
+  }
+}

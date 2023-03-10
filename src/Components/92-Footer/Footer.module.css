@@ -4,9 +4,12 @@
 
 .container {
   /* background-color: #f43534; */
+  margin: 10px 0 auto;
   display: flex;
 }
-
+p {
+  font-size: 15px;
+}
 .copyright__text {
   display: flex;
 }
@@ -28,13 +31,13 @@
   display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-right: 8px;
   padding-left: 20px;
 }
 
 .footer__section .copyright__text {
-  width: 45%;
+  /* width: 45%; */
   display: flex;
   justify-content: space-around;
   font-size: 17px;
@@ -53,11 +56,4 @@
 }
 .footer__section .container .social__icon li {
   margin-left: 5px;
-}
-
-.nav__contacts__icons_hh {
-  height: 40px;
-  width: 40px;
-  color: #fff;
-  background-image: url("../../images/icons/contact-icon-hh.svg");
 }
