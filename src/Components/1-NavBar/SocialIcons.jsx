@@ -10,7 +10,7 @@ const contactLinks = [
   [
     <Cv className={style.nav__contacts__icons} />,
     "Резюме на русском",
-    "/public/files/CV_Fullstack_Pavel.Plekhanov.txt",
+    "/files/CV_Fullstack_Pavel.Plekhanov.txt",
     "contact-icon-cv.svg",
   ],
   [
@@ -38,9 +38,14 @@ export default function SocialIcons({ setActiveMenu, off }) {
     <div className={style.nav__contacts__social}>
       {off ? null : <h4> Резюме </h4>}
       <ul>
-        {contactLinks.map((li) => (
+        {contactLinks.map((li, index) => (
           <li>
-            <a href={li[2]} onClick={() => setActiveMenu(false)}>
+            <a
+              target="_blank"
+              download
+              href={li[2]}
+              onClick={() => setActiveMenu(false)}
+            >
               {li[0]}
             </a>
           </li>

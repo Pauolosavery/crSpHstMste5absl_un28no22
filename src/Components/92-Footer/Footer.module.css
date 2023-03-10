@@ -7,9 +7,11 @@
   margin: 10px 0 auto;
   display: flex;
 }
-p {
+
+.copyright__text p {
   font-size: 15px;
 }
+
 .copyright__text {
   display: flex;
 }
