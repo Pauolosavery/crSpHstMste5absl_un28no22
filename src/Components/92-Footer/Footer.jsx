@@ -27,7 +27,7 @@ const contactLinks = [
   [
     <In className={style.nav__contacts__icons} />,
     "LinkedIn",
-    "https://linkedin.com/in/pavelplekhanov",
+    "www.linkedin.com/in/pavel-plekhanov",
     "contact-icon-in.svg",
   ],
 ];
