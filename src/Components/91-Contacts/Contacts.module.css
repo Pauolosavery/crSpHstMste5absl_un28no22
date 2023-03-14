@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-  padding: 120px 0;
+  padding: 120px 50px;
 }
 
 .title {
@@ -96,4 +96,59 @@
   font-style: normal;
   line-height: inherit;
   text-decoration: underline;
+}
+
+.form label {
+  color: #555;
+}
+
+.form input {
+  border: none;
+  border-bottom: 1px solid #333;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 17px;
+  padding: 10px 15px 0 0;
+  width: 100%;
+  margin: 0 0 20px 0;
+  max-width: 100%;
+  resize: none;
+  color: #f43534;
+  height: 50px;
+  background: transparent;
+}
+
+.form * {
+  display: block;
+}
+
+.input__msg textarea {
+  color: #f43534;
+  height: 120px;
+  border-bottom: 1px solid #333;
+  font-size: 17px;
+  padding: 10px 15px 0 0;
+  width: 100%;
+  margin: 0 0 20px 0;
+  max-width: 100%;
+  resize: none;
+  background: transparent;
+}
+
+.input__submit {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.input__submit button {
+  border: none;
+  height: 50px;
+  padding: 0 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #f43534;
+  font-weight: 500;
+  color: #fff;
 }

@@ -10,8 +10,8 @@ export default function Portfolio() {
       <div className={style.container}>
         <ol className={style.wrapper}>
           {projects.map((site, i) => (
-            <li>
-              <OneSite site={site} id={site.img} pos={i} />
+            <li key={site.position}>
+              <OneSite site={site} id={site.img} pos={i} key={site.title} />
             </li>
           ))}
         </ol>

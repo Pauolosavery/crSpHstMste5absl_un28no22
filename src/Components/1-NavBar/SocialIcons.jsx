@@ -39,12 +39,13 @@ export default function SocialIcons({ setActiveMenu, off }) {
       {off ? null : <h4> Резюме </h4>}
       <ul>
         {contactLinks.map((li, index) => (
-          <li>
+          <li key={li[2]}>
             <a
               target="_blank"
               download
               href={li[2]}
               onClick={() => setActiveMenu(false)}
+              rel="noreferrer"
             >
               {li[0]}
             </a>
