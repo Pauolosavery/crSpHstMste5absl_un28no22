@@ -70,6 +70,7 @@ h6,
 p {
   font-size: inherit;
   font-weight: inherit;
+  line-height: 1.8;
 }
 
 ul,
