@@ -152,3 +152,12 @@
   font-weight: 500;
   color: #fff;
 }
+
+@media (max-width: 767px) {
+  .c__wrapper {
+    flex-direction: column;
+  }
+  .form {
+    margin-top: 43px;
+  }
+}
