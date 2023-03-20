@@ -10,7 +10,7 @@ const contactLinks = [
   [
     <Cv className={style.nav__contacts__icons} />,
     "Резюме на русском",
-    "/files/CV_Fullstack_Pavel.Plekhanov.txt",
+    "/files/CV_Frontend_Pavel.Plekhanov.pdf",
     "contact-icon-cv.svg",
   ],
   [
