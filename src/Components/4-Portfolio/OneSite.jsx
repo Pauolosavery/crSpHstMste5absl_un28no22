@@ -1,19 +1,25 @@
 import style from "./OneSite.module.css";
-export default function OneSite({ site }) {
+export default function OneSite({ site, pos }) {
   return (
-    <a className={style.single} href="#Home">
-      <div className={style.img__wrapper}>
-        <img
-          src={require(`../../images/icons/${site.img}`)}
-          alt={`${site.title}`}
-        />
+    <div className={style.single__portfolio}>
+      <div className={style.img__area}>
+        <a href="#Home">
+          <img
+            src={require(`../../images/icons/${site.img}`)}
+            alt={`${site.title}`}
+          />
+        </a>
       </div>
-      <div className={style.text}>
-        <h2>{site.title}</h2>
-        <h3>{site.position}</h3>
-        <p>{site.stack}</p>
-        <p>{site.discription}</p>
+      <span className={style.number}>{`0${pos}`}</span>
+      <div className={style.portfolio__content}>
+        <h2 className={style.portfolio__title}>{site.title}</h2>
+        <h3 className={style.portfolio__myposition}>{site.position}</h3>
+        <p className={style.portfolio__stack}>{site.stack}</p>
+        <p className={style.portfolio__discription}>{site.discription}</p>
+        <a className={style.portfolio__single__link} href="#Home">
+          Посетить
+        </a>
       </div>
-    </a>
+    </div>
   );
 }

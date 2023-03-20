@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto:wght@700&family=Ubuntu:wght@700&display=swap");
 .portfolio {
+  width: 100%;
   position: relative;
   background-color: #16171b;
   color: #acacac;
@@ -20,13 +21,19 @@
   height: 100%;
 }
 
-.projects {
-}
-
-.wrapper {
+.container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+}
+
+.wrapper {
+  padding: 0 5%;
+  width: 100%;
+}
+
+li {
+  width: 100%;
 }
 .section__title {
   font-size: 90px;
