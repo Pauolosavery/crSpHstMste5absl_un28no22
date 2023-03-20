@@ -1,21 +1,33 @@
 h3 {
   font-size: 30px;
   line-height: 42px;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
 }
-
-p {
-  line-height: 1.6;
-  margin-top: 12px;
+.single__skill h3 *:first-child {
+  white-space: nowrap;
+}
+.single__skill p {
+  margin: 15px 0;
   padding: 0px;
   font-size: 22px;
   line-height: 1.8;
   color: #acacac;
-  margin: 0px auto;
   -webkit-font-smoothing: antialiased;
 }
+
 .line {
-  width: calc(100% - 148.125px);
+  width: calc(100% - 185px);
+  display: block;
+  position: relative;
+  top: 5px;
+  margin-left: 30px;
+  height: 2px;
 }
+
 .single__skill {
   width: 45%;
   max-width: 535px;
@@ -36,11 +48,23 @@ p {
   visibility: visible;
 }
 
+.rectengle {
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  height: 34px;
+  width: 95px;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0) 1%,
+    rgba(78, 78, 78, 0.99) 99%,
+    rgba(78, 78, 78, 1) 100%
+  );
+}
+
 .circle {
   position: absolute;
   display: block;
-  top: 31px;
-  right: calc(-3%);
   width: 18px;
   height: 18px;
   background: #f43534;
@@ -49,18 +73,47 @@ p {
   box-shadow: 0 0px 0px 8px #333;
 }
 
-.rectengle {
+.circleRectangle {
   position: absolute;
-  top: 23px;
-  right: calc(-1%);
-  height: 34px;
-  width: 115px;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 1%,
-    rgba(78, 78, 78, 0.99) 99%,
-    rgba(78, 78, 78, 1) 100%
-  );
+  top: 55px;
+}
+
+@media (max-width: 768px) {
+  .left__orient {
+    left: -37px;
+    width: 100px;
+    height: 40px;
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 768px) {
+  .left__orient {
+    left: -45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .left__orient {
+    left: -57px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .left__orient {
+    left: -68px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .left__orient {
+    left: -68px;
+  }
+}
+
+.right__orient {
+  right: -58px;
+  transform: rotate(180deg);
 }
 
 .line {

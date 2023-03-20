@@ -11,8 +11,8 @@ export default function Skill() {
         <h2 className={style.section__title}>мой стек</h2>
         <div className={style.skill__wrapper} id="me-working-skill">
           <span className={style.vertical__line} />
-          {skills.map((s) => (
-            <SingleSkill s={s} id={s.title} />
+          {skills.map((s, index) => (
+            <SingleSkill s={s} id={s.title} index={index} key={s.title} />
           ))}
         </div>
       </div>

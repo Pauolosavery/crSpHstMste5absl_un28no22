@@ -47,8 +47,8 @@
   top: 0;
   text-transform: lowercase;
   margin-bottom: 50px;
-  text-shadow: -1px -1px 0 #26272d, 1px -1px 0 #26272d, -1px 1px 0 #26272d,
-    1px 1px 0 #26272d;
+  text-shadow: -1px -1px 0 #606163, 1px -1px 0 #606163, -1px 1px 0 #606163,
+    1px 1px 0 #606163;
   color: #16171b;
 }
 

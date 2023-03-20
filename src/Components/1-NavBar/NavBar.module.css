@@ -7,7 +7,7 @@
 }
 .nav__bar__active {
   background-color: #16171b;
-  height: 100vh;
+  height: 100%;
   overflow-y: hidden;
 }
 
@@ -105,7 +105,7 @@
 
 .navList__body {
   padding: 10%;
-  font-size: 60px;
+  font-size: 300%;
   font-weight: 700;
   height: 80%;
   width: 100%;
@@ -147,7 +147,7 @@
 }
 
 .nav__contacts__social {
-  width: 30%;
+  width: 250px;
 }
 
 .nav__contacts__social ul {
@@ -164,4 +164,11 @@
 
 .nav__contacts h4 {
   margin: 0 0 10px 0;
+}
+
+@media (max-width: 767px) {
+  .nav__contacts {
+    flex-direction: column;
+    padding: 0 10%;
+  }
 }
