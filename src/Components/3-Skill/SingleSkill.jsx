@@ -2,16 +2,11 @@ import style from "./SingleSkill.module.css";
 
 export default function SingleSkill({ s, index }) {
   let index1 = Number(index) % 2;
-  let singleSkillTransform = "translate(0, 80px)";
   return (
-    // <div
-    //   className={`${style.single__skill} ${
-    //     index1 ? style.left__point : style.right__point
-    //   }`}
-    // >
     <div
-      className={`${style.single__skill}`}
-      style={index1 ? { transform: singleSkillTransform } : null}
+      className={`${style.single__skill} ${
+        index1 ? style.single__transform : null
+      }`}
     >
       <div
         className={`${style.circleRectangle}
