@@ -267,8 +267,12 @@
   box-shadow: 0 10px 20px -8px #f43534;
 }
 
-.hero__section a {
+.hero__section a,
+a:link,
+a:visited {
   color: #ccc;
+  text-decoration: none;
+  display: block;
 }
 
 @-webkit-keyframes scroll__down-move {

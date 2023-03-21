@@ -1,11 +1,14 @@
 .single__portfolio {
-  position: relative;
-  width: 100%;
+  /* width: 100%;
+  position: relative; */
+}
+.img__area {
+  /* object-fit: cover; */
 }
 
-a {
-  display: inline-block;
-  width: calc(100vw-5px);
+.single__portfolio a {
+  /* display: inline-block;
+  width: calc(100vw-5px); */
 }
 
 .number {
@@ -16,42 +19,33 @@ a {
 
 @media (max-width: 768px) {
   .single__portfolio {
-    display: block;
   }
 }
 
 @media (min-width: 768px) {
   .single__portfolio {
-    display: flex;
   }
   .img__area {
-    width: 50%;
   }
 }
 
 @media (min-width: 992px) {
   .single__portfolio {
-    display: flex;
   }
   .img__area {
-    width: 55%;
   }
 }
 
 @media (min-width: 1200px) {
   .single__portfolio {
-    display: flex;
   }
   .img__area {
-    width: 60%;
   }
 }
 
 @media (min-width: 1400px) {
   .single__portfolio {
-    display: flex;
   }
   .img__area {
-    width: 65%;
   }
 }

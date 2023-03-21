@@ -7,9 +7,11 @@ h3 {
   align-items: center;
   justify-content: flex-start;
 }
+
 .single__skill h3 *:first-child {
   white-space: nowrap;
 }
+
 .single__skill p {
   margin: 15px 0;
   padding: 0px;
