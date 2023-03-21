@@ -10,7 +10,7 @@ const contactLinks = [
   [
     <Cv className={style.nav__contacts__icons} />,
     "Резюме на русском",
-    "/files/CV_Fullstack_Pavel.Plekhanov.txt",
+    "/files/CV_Frontend_Pavel.Plekhanov.pdf",
     "contact-icon-cv.svg",
   ],
   [
@@ -22,7 +22,7 @@ const contactLinks = [
   [
     <Hh className={style.nav__contacts__icons} />,
     "HeadHunter",
-    "https://hh.ru/pavelplekhanov",
+    "https://spb.hh.ru/resume/d5c69900ff07481a2a0039ed1f61314e426359",
     "contact-icon-hh.svg",
   ],
   [
