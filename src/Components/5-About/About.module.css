@@ -160,3 +160,15 @@
     padding: 86px 6px 85px 20px;
   }
 }
+@keyframes about-shape-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
