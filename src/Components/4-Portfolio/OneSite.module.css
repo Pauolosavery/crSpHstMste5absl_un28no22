@@ -3,7 +3,18 @@
   position: relative; */
 }
 .img__area {
-  /* object-fit: cover; */
+  background: #1e1f23;
+  width: 55%;
+  padding: 45px;
+  position: relative;
+}
+.img__area::before {
+  content: url(../../images/dot-texture.png);
+  position: absolute;
+  bottom: -228px;
+  left: 195px;
+  z-index: 0;
+  transform: rotate(90deg);
 }
 
 .single__portfolio a {
