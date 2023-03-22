@@ -9,8 +9,11 @@ export default function Contacts() {
     msg: undefined,
   });
   const sendMessage = () => {
+    // alert(
+    //   `Ваше сообщение: \n"Имя: ${message.userName}, \n Почта: ${message.email}, \n Сообщение: ${message.msg}",\n отправлено, скоро Я с Вами свяжусь`
+    // );
     alert(
-      `Ваше сообщение: \n"Имя: ${message.userName}, \n Почта: ${message.email}, \n Сообщение: ${message.msg}",\n отправлено, скоро Я с Вами свяжусь`
+      `Извините, ${message.userName}! \nПроизошла ошибка на стороне сервера, \nвоспользуйтесь своим почтовым клиентом и отправьте письмо на прямую \npavel.plekhanov.job@gmail.com `
     );
     formRef.current.reset();
   };

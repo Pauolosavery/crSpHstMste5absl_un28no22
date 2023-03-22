@@ -5,7 +5,7 @@
   background-color: #16171b;
   color: #acacac;
   font-size: 90px;
-  padding: 100px 0 100px;
+  padding: 45px 0 100px;
   overflow: hidden;
   background: #16171b url("../../images/bgd/project-bg1.jpg") no-repeat;
   background-position: center top;
@@ -50,6 +50,5 @@ li {
   font-family: "Ubuntu";
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  /* -webkit-text-stroke-color: #333; */
-  -webkit-text-stroke-color: #d7d7d77d;
+  -webkit-text-stroke-color: #565656;
 }

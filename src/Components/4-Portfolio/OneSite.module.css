@@ -60,8 +60,6 @@
 
 .number {
   position: absolute;
-  left: 55%;
-  top: -7%;
   font-size: 80px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
@@ -72,13 +70,22 @@
   .single__portfolio {
     display: block;
   }
+  .portfolio__content {
+    width: 100%;
+  }
+  .number {
+    left: 86%;
+    top: 47%;
+  }
 }
 
 @media (min-width: 768px) {
   .single__portfolio {
     display: flex;
   }
-  .img__area {
+  .number {
+    left: 55%;
+    top: -7%;
   }
 }
 
@@ -86,7 +93,9 @@
   .single__portfolio {
     display: flex;
   }
-  .img__area {
+  .number {
+    left: 55%;
+    top: -7%;
   }
 }
 
@@ -94,7 +103,9 @@
   .single__portfolio {
     display: flex;
   }
-  .img__area {
+  .number {
+    left: 55%;
+    top: -7%;
   }
 }
 
@@ -102,6 +113,8 @@
   .single__portfolio {
     display: flex;
   }
-  .img__area {
+  .number {
+    left: 55%;
+    top: -7%;
   }
 }
