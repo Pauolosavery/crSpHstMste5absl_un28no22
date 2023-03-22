@@ -1,13 +1,49 @@
 .single__portfolio {
-  /* width: 100%;
-  position: relative; */
+  width: 100%;
+  position: relative;
+  margin: 70px 0;
 }
+
+.portfolio__content {
+  width: 40%;
+  padding: 40px;
+}
+
+.portfolio__type {
+  color: #f43534;
+  font-size: 20px;
+}
+
+.portfolio__title {
+  color: #fffefe;
+  font-size: 20px;
+}
+
+.portfolio__stack {
+  color: #ababab;
+  font-size: 15px;
+}
+
+.portfolio__discription {
+  margin: 15px 0;
+  color: #fffefe;
+  font-size: 20px;
+}
+
+.portfolio__single__link {
+  display: inline-block;
+  font-size: 25px;
+  color: #fffefe;
+  margin-top: 37px;
+}
+
 .img__area {
   background: #1e1f23;
-  width: 55%;
+  width: 100%;
   padding: 45px;
   position: relative;
 }
+
 .img__area::before {
   content: url(../../images/dot-texture.png);
   position: absolute;
@@ -18,23 +54,29 @@
 }
 
 .single__portfolio a {
-  /* display: inline-block;
-  width: calc(100vw-5px); */
+  /* display: inline-block; */
+  width: 60%;
 }
 
 .number {
   position: absolute;
-  left: 50%;
-  top: -3%;
+  left: 55%;
+  top: -7%;
+  font-size: 80px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #333;
 }
 
 @media (max-width: 768px) {
   .single__portfolio {
+    display: block;
   }
 }
 
 @media (min-width: 768px) {
   .single__portfolio {
+    display: flex;
   }
   .img__area {
   }
@@ -42,6 +84,7 @@
 
 @media (min-width: 992px) {
   .single__portfolio {
+    display: flex;
   }
   .img__area {
   }
@@ -49,6 +92,7 @@
 
 @media (min-width: 1200px) {
   .single__portfolio {
+    display: flex;
   }
   .img__area {
   }
@@ -56,6 +100,7 @@
 
 @media (min-width: 1400px) {
   .single__portfolio {
+    display: flex;
   }
   .img__area {
   }

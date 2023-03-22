@@ -168,8 +168,8 @@
 .hero__section .scroll__down {
   position: absolute;
   bottom: 110px;
-    bottom: 90px;
-    left: -20px;
+  bottom: 90px;
+  left: -20px;
   color: #acacac;
   text-transform: uppercase;
   font-weight: 700;
@@ -268,8 +268,8 @@
 }
 
 .hero__section a,
-a:link,
-a:visited {
+.hero__section a:link,
+.hero__section a:visited {
   color: #ccc;
   text-decoration: none;
   display: block;
