@@ -168,8 +168,8 @@
 .hero__section .scroll__down {
   position: absolute;
   bottom: 110px;
-  left: 3px;
-  font-size: 14px;
+    bottom: 90px;
+    left: -20px;
   color: #acacac;
   text-transform: uppercase;
   font-weight: 700;

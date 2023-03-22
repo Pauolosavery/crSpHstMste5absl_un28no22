@@ -2,14 +2,14 @@ import style from "./OneSite.module.css";
 export default function OneSite({ site, pos }) {
   return (
     <div className={style.single__portfolio}>
+        <a href="#Portfolio">
       <div className={style.img__area}>
-        <a href="#Home">
           <img
             src={require(`../../images/icons/${site.img}`)}
             alt={`${site.title}`}
           />
-        </a>
       </div>
+        </a>
       <span className={style.number}>{`0${pos}`}</span>
       <div className={style.portfolio__content}>
         <h2 className={style.portfolio__title}>{site.title}</h2>
