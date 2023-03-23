@@ -28,7 +28,7 @@ const contactLinks = [
   [
     <In className={style.nav__contacts__icons} />,
     "LinkedIn",
-    "www.linkedin.com/in/pavel-plekhanov",
+    "https://linkedin.com/in/pavel-plekhanov",
     "contact-icon-in.svg",
   ],
 ];
@@ -42,7 +42,11 @@ export default function SocialIcons({ setActiveMenu, off }) {
           <li key={li[2]}>
             <a
               target="_blank"
-              download
+              download={
+                li[1].includes("Резюме на русском")
+                  ? "CV_Frontend_Pavel.Plekhanov.pdf"
+                  : null
+              }
               href={li[2]}
               onClick={() => setActiveMenu(false)}
               rel="noreferrer"

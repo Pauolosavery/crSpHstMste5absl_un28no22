@@ -1,8 +1,10 @@
 import style from "./OneSite.module.css";
+import styleArrow from "../2-Home/Home.module.css";
+
 export default function OneSite({ site, pos }) {
   return (
     <div className={style.single__portfolio}>
-      <a href="#Portfolio">
+      <a href="#Portfolio" onClick={() => alert("Ссылка в разработке.")}>
         <div className={style.img__area}>
           <img
             src={require(`../../images/icons/${site.img}`)}
@@ -19,9 +21,23 @@ export default function OneSite({ site, pos }) {
         </h3>
         <p className={style.portfolio__stack}>Стек: {site.stack}</p>
         <p className={style.portfolio__discription}>{site.discription}</p>
-        <a className={style.portfolio__single__link} href="#Home">
+        {/* <label for="name">
+          <a
+            className={style.portfolio__single__link}
+            // className={`${styleArrow.hire__me} ${styleArrow.link__default} ${styleArrow.animate__me} ${styleArrow.animated}`}
+          >
+            Посетить
+            <span>
+              <img
+                src={require("../../images/arrow-right-white.png")}
+                alt="→"
+              />
+            </span>
+          </a>
+        </label> */}
+        {/* <a className={style.portfolio__single__link} href="#Home">
           Посетить
-        </a>
+        </a> */}
       </div>
     </div>
   );

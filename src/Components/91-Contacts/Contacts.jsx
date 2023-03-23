@@ -1,4 +1,5 @@
 import style from "./Contacts.module.css";
+import { Link } from "react-router-dom";
 import { useState, useRef } from "react";
 import { ReactComponent as SendMail } from "../../images/icons/send-mail.svg";
 
@@ -8,6 +9,7 @@ export default function Contacts() {
     email: undefined,
     msg: undefined,
   });
+
   const sendMessage = () => {
     // alert(
     //   `Ваше сообщение: \n"Имя: ${message.userName}, \n Почта: ${message.email}, \n Сообщение: ${message.msg}",\n отправлено, скоро Я с Вами свяжусь`
@@ -15,7 +17,8 @@ export default function Contacts() {
     alert(
       `Извините, ${message.userName}! \nПроизошла ошибка на стороне сервера, \nвоспользуйтесь своим почтовым клиентом и отправьте письмо на прямую \npavel.plekhanov.job@gmail.com `
     );
-    formRef.current.reset();
+    window.location.href = "mailto:pavel.plekhanov.job@gmail.com";
+    // formRef.current.reset();
   };
   const formRef = useRef(null);
 
@@ -84,7 +87,7 @@ export default function Contacts() {
                 ></textarea>
               </div>
               <div className={style.input__submit}>
-                <button onClick={() => sendMessage()} type="submit">
+                <button onClick={() => sendMessage()} type="button">
                   ОТПРАВИТЬ
                 </button>
               </div>

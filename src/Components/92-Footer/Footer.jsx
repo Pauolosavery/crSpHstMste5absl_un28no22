@@ -41,7 +41,7 @@ export default function Footer() {
               <div>&#169; {new Date().getFullYear()}</div>
             </span>{" "}
             <text>Сайт создан мной на React</text>
-            <div>
+            {/* <div>
               Вдохновлён &#160;
               <a
                 href="https://demo.themecon.net/onlyme/html/index-3.html#"
@@ -50,7 +50,7 @@ export default function Footer() {
               >
                 Belal
               </a>
-            </div>
+            </div> */}
           </p>
         </div>
         <SocialIcons off={true} />
