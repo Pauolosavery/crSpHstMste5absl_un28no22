@@ -22,7 +22,9 @@ export default function NavLogo({ setActiveMenu, activeMenu, top }) {
   }
   return (
     <div className={menuStyle.navLogo}>
-      <a href="#Home" className={style.navLogo__ico} />
+      <a href="#Home" className={style.navLogo__ico}>
+        {null}
+      </a>
       <button
         onClick={() => setActiveMenu(!activeMenu)}
         className={menuStyle.navLogo__btn}
